@@ -1,0 +1,1590 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6dcfd6fac51831b65a03753a48ae7c62 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6dcfd6fac51831b65a03753a48ae7c62" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6dcfd6fac51831b65a03753a48ae7c62 = L.map(
+                "map_6dcfd6fac51831b65a03753a48ae7c62",
+                {
+                    center: [46.167, 14.305],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d7e63f8d62ac01ab23dcb2b71dd8e971 = L.tileLayer(
+                "https://mt1.google.com/vt/lyrs=y\u0026x={x}\u0026y={y}\u0026z={z}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Google Maps",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d7e63f8d62ac01ab23dcb2b71dd8e971.addTo(map_6dcfd6fac51831b65a03753a48ae7c62);
+        
+    
+            var feature_group_96adbd949ba85c9e93fbe71949495ee6 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_4a6fbeae8edbdee4d8dececa9f7db56f = L.marker(
+                [46.16, 14.285],
+                {
+}
+            ).addTo(feature_group_96adbd949ba85c9e93fbe71949495ee6);
+        
+    
+            var icon_c347b0dac73ee2c95406745d20927f8d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_922d32e29c16c7499b9be2eaad04a783 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c3d146413ba1275e03758df5c2a35fca = $(`<div id="html_c3d146413ba1275e03758df5c2a35fca" style="width: 100.0%; height: 100.0%;"><h3>Poljane Sora River</h3><p>Near the Poljane Sora River, a great spot for fishing and walking.</p><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" width="250"></div>`)[0];
+                popup_922d32e29c16c7499b9be2eaad04a783.setContent(html_c3d146413ba1275e03758df5c2a35fca);
+            
+        
+
+        marker_4a6fbeae8edbdee4d8dececa9f7db56f.bindPopup(popup_922d32e29c16c7499b9be2eaad04a783)
+        ;
+
+        
+    
+    
+            marker_4a6fbeae8edbdee4d8dececa9f7db56f.bindTooltip(
+                `<div>
+                     Poljane Sora River
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4a6fbeae8edbdee4d8dececa9f7db56f.setIcon(icon_c347b0dac73ee2c95406745d20927f8d);
+            
+    
+            var marker_fe5151f12dba914eb4d1856260f943bb = L.marker(
+                [46.185, 14.39],
+                {
+}
+            ).addTo(feature_group_96adbd949ba85c9e93fbe71949495ee6);
+        
+    
+            var icon_eef05053b345258350f97b88611e2e10 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e2de05b5798bd861e1ff06efea4be7db = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ff426e2b590a4620ae5f1196a8d16f6f = $(`<div id="html_ff426e2b590a4620ae5f1196a8d16f6f" style="width: 100.0%; height: 100.0%;"><h3>Godešič</h3><p>On the outskirts of the village of Godešič, with views of the valley.</p><img src="https://images.unsplash.com/photo-1448375240586-882707db888b" width="250"></div>`)[0];
+                popup_e2de05b5798bd861e1ff06efea4be7db.setContent(html_ff426e2b590a4620ae5f1196a8d16f6f);
+            
+        
+
+        marker_fe5151f12dba914eb4d1856260f943bb.bindPopup(popup_e2de05b5798bd861e1ff06efea4be7db)
+        ;
+
+        
+    
+    
+            marker_fe5151f12dba914eb4d1856260f943bb.bindTooltip(
+                `<div>
+                     Godešič
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fe5151f12dba914eb4d1856260f943bb.setIcon(icon_eef05053b345258350f97b88611e2e10);
+            
+    
+            var marker_ee691998667fd0660b4e32f0dd0145d6 = L.marker(
+                [46.075, 14.205],
+                {
+}
+            ).addTo(feature_group_96adbd949ba85c9e93fbe71949495ee6);
+        
+    
+            var icon_192b380ffe77a4b614794dfa6e314e55 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d3e3eb80e1255aeabf6f2d761762fcc4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6f4600ffcabccfb0a27b1f1602fd29e9 = $(`<div id="html_6f4600ffcabccfb0a27b1f1602fd29e9" style="width: 100.0%; height: 100.0%;"><h3>Škofja Loka</h3><p>A location within the forested hills of the Škofja Loka region.</p><img src="https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg" width="250"></div>`)[0];
+                popup_d3e3eb80e1255aeabf6f2d761762fcc4.setContent(html_6f4600ffcabccfb0a27b1f1602fd29e9);
+            
+        
+
+        marker_ee691998667fd0660b4e32f0dd0145d6.bindPopup(popup_d3e3eb80e1255aeabf6f2d761762fcc4)
+        ;
+
+        
+    
+    
+            marker_ee691998667fd0660b4e32f0dd0145d6.bindTooltip(
+                `<div>
+                     Škofja Loka
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ee691998667fd0660b4e32f0dd0145d6.setIcon(icon_192b380ffe77a4b614794dfa6e314e55);
+            
+    
+            var marker_cb5cde088e5a5d1d86fec6080d995539 = L.marker(
+                [46.12, 14.225],
+                {
+}
+            ).addTo(feature_group_96adbd949ba85c9e93fbe71949495ee6);
+        
+    
+            var icon_98d34f829dc545afec079af4f9ba2822 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5352a79802f7ca6f46d25b394e0e3af0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a9289c371a9291b8bb280e76f9e5f67d = $(`<div id="html_a9289c371a9291b8bb280e76f9e5f67d" style="width: 100.0%; height: 100.0%;"><h3>Žirovski Vrh</h3><p>A point near the town of Žiri, on the edge of the scenic Žirovski Vrh.</p><img src="https://images.pexels.com/photos/847393/pexels-photo-847393.jpeg" width="250"></div>`)[0];
+                popup_5352a79802f7ca6f46d25b394e0e3af0.setContent(html_a9289c371a9291b8bb280e76f9e5f67d);
+            
+        
+
+        marker_cb5cde088e5a5d1d86fec6080d995539.bindPopup(popup_5352a79802f7ca6f46d25b394e0e3af0)
+        ;
+
+        
+    
+    
+            marker_cb5cde088e5a5d1d86fec6080d995539.bindTooltip(
+                `<div>
+                     Žirovski Vrh
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cb5cde088e5a5d1d86fec6080d995539.setIcon(icon_98d34f829dc545afec079af4f9ba2822);
+            
+    
+            var marker_05e4efd12aeb1671ecb4c4c89e5a75d2 = L.marker(
+                [46.195, 14.41],
+                {
+}
+            ).addTo(feature_group_96adbd949ba85c9e93fbe71949495ee6);
+        
+    
+            var icon_726830268588ed1e7435922303f8072e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c9231902881110155e748e0066af47c6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3bd850d077a1b50ca5a1b0bd95c75b41 = $(`<div id="html_3bd850d077a1b50ca5a1b0bd95c75b41" style="width: 100.0%; height: 100.0%;"><h3>Poljanska Sora</h3><p>Overlooking the village of Visoko, a key area for local cycling routes.</p><img src="https://cdn.pixabay.com/photo/2018/02/09/21/46/rose-3142529_1280.jpg" width="250"></div>`)[0];
+                popup_c9231902881110155e748e0066af47c6.setContent(html_3bd850d077a1b50ca5a1b0bd95c75b41);
+            
+        
+
+        marker_05e4efd12aeb1671ecb4c4c89e5a75d2.bindPopup(popup_c9231902881110155e748e0066af47c6)
+        ;
+
+        
+    
+    
+            marker_05e4efd12aeb1671ecb4c4c89e5a75d2.bindTooltip(
+                `<div>
+                     Poljanska Sora
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_05e4efd12aeb1671ecb4c4c89e5a75d2.setIcon(icon_726830268588ed1e7435922303f8072e);
+            
+    
+            var marker_c8a1461c7362f2b8bad6c8e3339f9c2c = L.marker(
+                [46.215, 14.19],
+                {
+}
+            ).addTo(feature_group_96adbd949ba85c9e93fbe71949495ee6);
+        
+    
+            var icon_8f1eb40cf6af4b0d6717bba5a797e0cd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_790ef2e159b2f7b22f39c43bb4dabc8a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_17bb6cf0af3de83179d2587b03c81397 = $(`<div id="html_17bb6cf0af3de83179d2587b03c81397" style="width: 100.0%; height: 100.0%;"><h3>Visoko</h3><p>Located on the old Rupnik Line fortifications, with historical walking trails.</p><img src="https://cdn.pixabay.com/photo/2017/12/15/13/51/polynesia-3021072_1280.jpg" width="250"></div>`)[0];
+                popup_790ef2e159b2f7b22f39c43bb4dabc8a.setContent(html_17bb6cf0af3de83179d2587b03c81397);
+            
+        
+
+        marker_c8a1461c7362f2b8bad6c8e3339f9c2c.bindPopup(popup_790ef2e159b2f7b22f39c43bb4dabc8a)
+        ;
+
+        
+    
+    
+            marker_c8a1461c7362f2b8bad6c8e3339f9c2c.bindTooltip(
+                `<div>
+                     Visoko
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c8a1461c7362f2b8bad6c8e3339f9c2c.setIcon(icon_8f1eb40cf6af4b0d6717bba5a797e0cd);
+            
+    
+            var marker_b76552bf2da082dfffed4f55554fa11d = L.marker(
+                [46.24, 14.295],
+                {
+}
+            ).addTo(feature_group_96adbd949ba85c9e93fbe71949495ee6);
+        
+    
+            var icon_a65753678b669d5441cc8b2a9c7d454a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c9340ffc1a255bffdfd0507d6fce1953 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6d21011b4e7579292921deef3e1bbce3 = $(`<div id="html_6d21011b4e7579292921deef3e1bbce3" style="width: 100.0%; height: 100.0%;"><h3>Žiri</h3><p>A point with a view of the Lubnik cave system, a popular caving spot.</p><img src="https://images.unsplash.com/photo-1516426122078-c23e76319801" width="250"></div>`)[0];
+                popup_c9340ffc1a255bffdfd0507d6fce1953.setContent(html_6d21011b4e7579292921deef3e1bbce3);
+            
+        
+
+        marker_b76552bf2da082dfffed4f55554fa11d.bindPopup(popup_c9340ffc1a255bffdfd0507d6fce1953)
+        ;
+
+        
+    
+    
+            marker_b76552bf2da082dfffed4f55554fa11d.bindTooltip(
+                `<div>
+                     Žiri
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b76552bf2da082dfffed4f55554fa11d.setIcon(icon_a65753678b669d5441cc8b2a9c7d454a);
+            
+    
+            var marker_5b6fddc9b7304081fd17d571d470e348 = L.marker(
+                [46.17, 14.355],
+                {
+}
+            ).addTo(feature_group_96adbd949ba85c9e93fbe71949495ee6);
+        
+    
+            var icon_f9815f879f2b80e8dbda7471cc295c7e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3a725bb5a46dca2d1edddda032b3ab66 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_63286212428f039d87ec3869f618746b = $(`<div id="html_63286212428f039d87ec3869f618746b" style="width: 100.0%; height: 100.0%;"><h3>Zgornja Lipnica</h3><p>In the area of the villages of Stara Loka and Zgornja Lipnica, surrounded by fields.</p><img src="https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg" width="250"></div>`)[0];
+                popup_3a725bb5a46dca2d1edddda032b3ab66.setContent(html_63286212428f039d87ec3869f618746b);
+            
+        
+
+        marker_5b6fddc9b7304081fd17d571d470e348.bindPopup(popup_3a725bb5a46dca2d1edddda032b3ab66)
+        ;
+
+        
+    
+    
+            marker_5b6fddc9b7304081fd17d571d470e348.bindTooltip(
+                `<div>
+                     Zgornja Lipnica
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5b6fddc9b7304081fd17d571d470e348.setIcon(icon_f9815f879f2b80e8dbda7471cc295c7e);
+            
+    
+            var marker_01bb3285ea0b3016a11b65f7f58108ec = L.marker(
+                [46.135, 14.38],
+                {
+}
+            ).addTo(feature_group_96adbd949ba85c9e93fbe71949495ee6);
+        
+    
+            var icon_6482de4fdf7fb2bd87236c2a5b6e159b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_224a185313ffdf62c85a4072b8169370 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4e34ed3301adde2e4e0c54993e325594 = $(`<div id="html_4e34ed3301adde2e4e0c54993e325594" style="width: 100.0%; height: 100.0%;"><h3>Cross Church</h3><p>A rural location near the village of Suša, with its famous spring water.</p><img src="https://cdn.pixabay.com/photo/2016/11/08/05/18/night-1807555_1280.jpg" width="250"></div>`)[0];
+                popup_224a185313ffdf62c85a4072b8169370.setContent(html_4e34ed3301adde2e4e0c54993e325594);
+            
+        
+
+        marker_01bb3285ea0b3016a11b65f7f58108ec.bindPopup(popup_224a185313ffdf62c85a4072b8169370)
+        ;
+
+        
+    
+    
+            marker_01bb3285ea0b3016a11b65f7f58108ec.bindTooltip(
+                `<div>
+                     Cross Church
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_01bb3285ea0b3016a11b65f7f58108ec.setIcon(icon_6482de4fdf7fb2bd87236c2a5b6e159b);
+            
+    
+            var marker_da4f53712bc9b0fc01e602a1495656b6 = L.marker(
+                [46.105, 14.26],
+                {
+}
+            ).addTo(feature_group_96adbd949ba85c9e93fbe71949495ee6);
+        
+    
+            var icon_f1c0de6eddfc0f499f4deee4dc7dce7f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_08e0f2bdffd2517a89b56d52580fa3ad = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2ac22406b583afad4aeddeb95e4edc83 = $(`<div id="html_2ac22406b583afad4aeddeb95e4edc83" style="width: 100.0%; height: 100.0%;"><h3>Slatuški Waterfalls</h3><p>On the trail to the Seven Slatuški Waterfalls, a beautiful natural attraction.</p><img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e" width="250"></div>`)[0];
+                popup_08e0f2bdffd2517a89b56d52580fa3ad.setContent(html_2ac22406b583afad4aeddeb95e4edc83);
+            
+        
+
+        marker_da4f53712bc9b0fc01e602a1495656b6.bindPopup(popup_08e0f2bdffd2517a89b56d52580fa3ad)
+        ;
+
+        
+    
+    
+            marker_da4f53712bc9b0fc01e602a1495656b6.bindTooltip(
+                `<div>
+                     Slatuški Waterfalls
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_da4f53712bc9b0fc01e602a1495656b6.setIcon(icon_f1c0de6eddfc0f499f4deee4dc7dce7f);
+            
+    
+            feature_group_96adbd949ba85c9e93fbe71949495ee6.addTo(map_6dcfd6fac51831b65a03753a48ae7c62);
+        
+    
+            var feature_group_640c36c67a473b7425b42d8a1b76e6ea = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_7029b60efa08720680c09399d9713ad6 = L.marker(
+                [46.167, 14.305],
+                {
+}
+            ).addTo(feature_group_640c36c67a473b7425b42d8a1b76e6ea);
+        
+    
+            var icon_409f394ac3d7d06bb61c4a48f9972978 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0275258631f36a01227e52404ca8a573 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_663dc0138ad41a4c9d1d743268e78a6a = $(`<div id="html_663dc0138ad41a4c9d1d743268e78a6a" style="width: 100.0%; height: 100.0%;"><h3>Poljanska Sora</h3><p>Škofja Loka's historic center featuring the famous Capuchin Bridge and preserved medieval architecture.</p><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" width="250"></div>`)[0];
+                popup_0275258631f36a01227e52404ca8a573.setContent(html_663dc0138ad41a4c9d1d743268e78a6a);
+            
+        
+
+        marker_7029b60efa08720680c09399d9713ad6.bindPopup(popup_0275258631f36a01227e52404ca8a573)
+        ;
+
+        
+    
+    
+            marker_7029b60efa08720680c09399d9713ad6.bindTooltip(
+                `<div>
+                     Poljanska Sora
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7029b60efa08720680c09399d9713ad6.setIcon(icon_409f394ac3d7d06bb61c4a48f9972978);
+            
+    
+            var marker_746b4d2f4f6569fe7f59914978158f0a = L.marker(
+                [46.173, 14.314],
+                {
+}
+            ).addTo(feature_group_640c36c67a473b7425b42d8a1b76e6ea);
+        
+    
+            var icon_b9e5bceb38853b77928f3e873bc99a14 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d77d25f5debb69d1fffbe9a1742189d7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7b74cf36d31ed7225821c719b69bfaaa = $(`<div id="html_7b74cf36d31ed7225821c719b69bfaaa" style="width: 100.0%; height: 100.0%;"><h3>Visoko</h3><p>The picturesque village of Puštal connected to Škofja Loka by the scenic Devil's Bridge.</p><img src="https://images.unsplash.com/photo-1448375240586-882707db888b" width="250"></div>`)[0];
+                popup_d77d25f5debb69d1fffbe9a1742189d7.setContent(html_7b74cf36d31ed7225821c719b69bfaaa);
+            
+        
+
+        marker_746b4d2f4f6569fe7f59914978158f0a.bindPopup(popup_d77d25f5debb69d1fffbe9a1742189d7)
+        ;
+
+        
+    
+    
+            marker_746b4d2f4f6569fe7f59914978158f0a.bindTooltip(
+                `<div>
+                     Visoko
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_746b4d2f4f6569fe7f59914978158f0a.setIcon(icon_b9e5bceb38853b77928f3e873bc99a14);
+            
+    
+            var marker_db20e47375262921add305fbec346e34 = L.marker(
+                [46.17, 14.31],
+                {
+}
+            ).addTo(feature_group_640c36c67a473b7425b42d8a1b76e6ea);
+        
+    
+            var icon_dde6df93035af718e70b580e79b19d1e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0c48a6511d77d7416f9e5dba2a391670 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d9bd776a394e214783e18d391d9f2fbb = $(`<div id="html_d9bd776a394e214783e18d391d9f2fbb" style="width: 100.0%; height: 100.0%;"><h3>Žiri</h3><p>A viewpoint on the trail to the Holy Cross Church offering a panoramic view of the town and castle.</p><img src="https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg" width="250"></div>`)[0];
+                popup_0c48a6511d77d7416f9e5dba2a391670.setContent(html_d9bd776a394e214783e18d391d9f2fbb);
+            
+        
+
+        marker_db20e47375262921add305fbec346e34.bindPopup(popup_0c48a6511d77d7416f9e5dba2a391670)
+        ;
+
+        
+    
+    
+            marker_db20e47375262921add305fbec346e34.bindTooltip(
+                `<div>
+                     Žiri
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_db20e47375262921add305fbec346e34.setIcon(icon_dde6df93035af718e70b580e79b19d1e);
+            
+    
+            var marker_750c022f560642832adab14b12a4668f = L.marker(
+                [46.164, 14.288],
+                {
+}
+            ).addTo(feature_group_640c36c67a473b7425b42d8a1b76e6ea);
+        
+    
+            var icon_97b94db491dc28de898fda5f39774eb7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e923a9fc77546f65a4666c278a249a08 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fdc8b395853c57e825603ddd63218e87 = $(`<div id="html_fdc8b395853c57e825603ddd63218e87" style="width: 100.0%; height: 100.0%;"><h3>Lubnik Hill</h3><p>A forested area near the Selska Sora River</p><img src="https://images.pexels.com/photos/847393/pexels-photo-847393.jpeg" width="250"></div>`)[0];
+                popup_e923a9fc77546f65a4666c278a249a08.setContent(html_fdc8b395853c57e825603ddd63218e87);
+            
+        
+
+        marker_750c022f560642832adab14b12a4668f.bindPopup(popup_e923a9fc77546f65a4666c278a249a08)
+        ;
+
+        
+    
+    
+            marker_750c022f560642832adab14b12a4668f.bindTooltip(
+                `<div>
+                     Lubnik Hill
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_750c022f560642832adab14b12a4668f.setIcon(icon_97b94db491dc28de898fda5f39774eb7);
+            
+    
+            var marker_5998df34c67046b53b0bc8932e77a750 = L.marker(
+                [46.185, 14.301],
+                {
+}
+            ).addTo(feature_group_640c36c67a473b7425b42d8a1b76e6ea);
+        
+    
+            var icon_5301217a646952d5517c21f481c1c6dd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bc475b80067bc4e8550dddefc2f2cfda = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b4f9d6d9166e14d5348a453a33e4d8c1 = $(`<div id="html_b4f9d6d9166e14d5348a453a33e4d8c1" style="width: 100.0%; height: 100.0%;"><h3>Cross Church</h3><p>An area with open fields and rolling hills north of the town offering a tranquil escape.</p><img src="https://cdn.pixabay.com/photo/2018/02/09/21/46/rose-3142529_1280.jpg" width="250"></div>`)[0];
+                popup_bc475b80067bc4e8550dddefc2f2cfda.setContent(html_b4f9d6d9166e14d5348a453a33e4d8c1);
+            
+        
+
+        marker_5998df34c67046b53b0bc8932e77a750.bindPopup(popup_bc475b80067bc4e8550dddefc2f2cfda)
+        ;
+
+        
+    
+    
+            marker_5998df34c67046b53b0bc8932e77a750.bindTooltip(
+                `<div>
+                     Cross Church
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5998df34c67046b53b0bc8932e77a750.setIcon(icon_5301217a646952d5517c21f481c1c6dd);
+            
+    
+            var marker_ab68f1f7b5de67b29a20b638e3bc6213 = L.marker(
+                [46.151, 14.309],
+                {
+}
+            ).addTo(feature_group_640c36c67a473b7425b42d8a1b76e6ea);
+        
+    
+            var icon_552283a9fd49ad86ed9c6c866085609c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0cc3551ac86d7a0e70be65b5f1bfd872 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1b3454c08ca233a6f42f0e88b4847146 = $(`<div id="html_1b3454c08ca233a6f42f0e88b4847146" style="width: 100.0%; height: 100.0%;"><h3>Železniki</h3><p>A location with a view of Škofja Loka Castle and the surrounding green landscape.</p><img src="https://cdn.pixabay.com/photo/2017/12/15/13/51/polynesia-3021072_1280.jpg" width="250"></div>`)[0];
+                popup_0cc3551ac86d7a0e70be65b5f1bfd872.setContent(html_1b3454c08ca233a6f42f0e88b4847146);
+            
+        
+
+        marker_ab68f1f7b5de67b29a20b638e3bc6213.bindPopup(popup_0cc3551ac86d7a0e70be65b5f1bfd872)
+        ;
+
+        
+    
+    
+            marker_ab68f1f7b5de67b29a20b638e3bc6213.bindTooltip(
+                `<div>
+                     Železniki
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ab68f1f7b5de67b29a20b638e3bc6213.setIcon(icon_552283a9fd49ad86ed9c6c866085609c);
+            
+    
+            var marker_64e5de4868e7128240f0ffcd5fe6d1ec = L.marker(
+                [46.143, 14.295],
+                {
+}
+            ).addTo(feature_group_640c36c67a473b7425b42d8a1b76e6ea);
+        
+    
+            var icon_e6837b67b319387cc832f48aefab7e46 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6be641ec02df240ee5386ce6ebf6607a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_af541839419a71f759c1741a90e3621c = $(`<div id="html_af541839419a71f759c1741a90e3621c" style="width: 100.0%; height: 100.0%;"><h3>Hills</h3><p>A quiet spot along the Poljanska Sora River</p><img src="https://images.unsplash.com/photo-1516426122078-c23e76319801" width="250"></div>`)[0];
+                popup_6be641ec02df240ee5386ce6ebf6607a.setContent(html_af541839419a71f759c1741a90e3621c);
+            
+        
+
+        marker_64e5de4868e7128240f0ffcd5fe6d1ec.bindPopup(popup_6be641ec02df240ee5386ce6ebf6607a)
+        ;
+
+        
+    
+    
+            marker_64e5de4868e7128240f0ffcd5fe6d1ec.bindTooltip(
+                `<div>
+                     Hills
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_64e5de4868e7128240f0ffcd5fe6d1ec.setIcon(icon_e6837b67b319387cc832f48aefab7e46);
+            
+    
+            var marker_61687da99d529c634eb7c1338f6f9f94 = L.marker(
+                [46.166, 14.269],
+                {
+}
+            ).addTo(feature_group_640c36c67a473b7425b42d8a1b76e6ea);
+        
+    
+            var icon_10b26a46a8180dcaf2a48c7822f523d4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cd498580a284396226c28c1ddc537c7c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_23d30a4b7997e82fc8558c4332f2d488 = $(`<div id="html_23d30a4b7997e82fc8558c4332f2d488" style="width: 100.0%; height: 100.0%;"><h3>Suša</h3><p>The hiking trail to Lubnik Hill</p><img src="https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg" width="250"></div>`)[0];
+                popup_cd498580a284396226c28c1ddc537c7c.setContent(html_23d30a4b7997e82fc8558c4332f2d488);
+            
+        
+
+        marker_61687da99d529c634eb7c1338f6f9f94.bindPopup(popup_cd498580a284396226c28c1ddc537c7c)
+        ;
+
+        
+    
+    
+            marker_61687da99d529c634eb7c1338f6f9f94.bindTooltip(
+                `<div>
+                     Suša
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_61687da99d529c634eb7c1338f6f9f94.setIcon(icon_10b26a46a8180dcaf2a48c7822f523d4);
+            
+    
+            var marker_3679e49263bd60d61b16d7cb29b3d7c8 = L.marker(
+                [46.178, 14.322],
+                {
+}
+            ).addTo(feature_group_640c36c67a473b7425b42d8a1b76e6ea);
+        
+    
+            var icon_508672ae0a85c63ab7e731f195d22633 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9336bdcf7f3751142aa82979db14e180 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0795fcd9c2a14cf33fc20f0024a60171 = $(`<div id="html_0795fcd9c2a14cf33fc20f0024a60171" style="width: 100.0%; height: 100.0%;"><h3>Idrija Hills</h3><p>A scenic view of the Škofja Loka region from a hiking trail on the outskirts of the town.</p><img src="https://cdn.pixabay.com/photo/2016/11/08/05/18/night-1807555_1280.jpg" width="250"></div>`)[0];
+                popup_9336bdcf7f3751142aa82979db14e180.setContent(html_0795fcd9c2a14cf33fc20f0024a60171);
+            
+        
+
+        marker_3679e49263bd60d61b16d7cb29b3d7c8.bindPopup(popup_9336bdcf7f3751142aa82979db14e180)
+        ;
+
+        
+    
+    
+            marker_3679e49263bd60d61b16d7cb29b3d7c8.bindTooltip(
+                `<div>
+                     Idrija Hills
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3679e49263bd60d61b16d7cb29b3d7c8.setIcon(icon_508672ae0a85c63ab7e731f195d22633);
+            
+    
+            var marker_9e0a4f5623e442aa453ab4c558ff7e9d = L.marker(
+                [46.155, 14.331],
+                {
+}
+            ).addTo(feature_group_640c36c67a473b7425b42d8a1b76e6ea);
+        
+    
+            var icon_47652dd8dbeacbd3f47abcb56a1ee7ad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_05d7678b1bfdc697fd17605593011305 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9a11bdcbcf2290d8d0bd8c3054ddf7a0 = $(`<div id="html_9a11bdcbcf2290d8d0bd8c3054ddf7a0" style="width: 100.0%; height: 100.0%;"><h3>Rupnik Line</h3><p>An area of serene countryside and farmland</p><img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e" width="250"></div>`)[0];
+                popup_05d7678b1bfdc697fd17605593011305.setContent(html_9a11bdcbcf2290d8d0bd8c3054ddf7a0);
+            
+        
+
+        marker_9e0a4f5623e442aa453ab4c558ff7e9d.bindPopup(popup_05d7678b1bfdc697fd17605593011305)
+        ;
+
+        
+    
+    
+            marker_9e0a4f5623e442aa453ab4c558ff7e9d.bindTooltip(
+                `<div>
+                     Rupnik Line
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9e0a4f5623e442aa453ab4c558ff7e9d.setIcon(icon_47652dd8dbeacbd3f47abcb56a1ee7ad);
+            
+    
+            feature_group_640c36c67a473b7425b42d8a1b76e6ea.addTo(map_6dcfd6fac51831b65a03753a48ae7c62);
+        
+    
+            var feature_group_9e2c304a83911001a19290ea5ca82ee4 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_21c97dd48ff9df8886d1ce01c982b1ae = L.marker(
+                [46.164, 14.312],
+                {
+}
+            ).addTo(feature_group_9e2c304a83911001a19290ea5ca82ee4);
+        
+    
+            var icon_baa4d14d7a40442e2a31514ca8aced7b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "tree-conifer",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c1fc621b8dadaa66b63956aa7337ce99 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_54664bc53ad35bb10263921cf29a067f = $(`<div id="html_54664bc53ad35bb10263921cf29a067f" style="width: 100.0%; height: 100.0%;"><h3>Poljanska Sora</h3><p>A picturesque viewpoint of the Poljanska Sora River near the old town.</p><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" width="250"></div>`)[0];
+                popup_c1fc621b8dadaa66b63956aa7337ce99.setContent(html_54664bc53ad35bb10263921cf29a067f);
+            
+        
+
+        marker_21c97dd48ff9df8886d1ce01c982b1ae.bindPopup(popup_c1fc621b8dadaa66b63956aa7337ce99)
+        ;
+
+        
+    
+    
+            marker_21c97dd48ff9df8886d1ce01c982b1ae.bindTooltip(
+                `<div>
+                     Poljanska Sora
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_21c97dd48ff9df8886d1ce01c982b1ae.setIcon(icon_baa4d14d7a40442e2a31514ca8aced7b);
+            
+    
+            var marker_ce981f58b2881b1e5987fa746559123e = L.marker(
+                [46.225, 14.45],
+                {
+}
+            ).addTo(feature_group_9e2c304a83911001a19290ea5ca82ee4);
+        
+    
+            var icon_63579f7a7d4304fe34b05461946a73e3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "tree-conifer",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e3a1af1c46f3f7e8119be4c9b9da1725 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c7c0491567da49864d871195fa3bb1c8 = $(`<div id="html_c7c0491567da49864d871195fa3bb1c8" style="width: 100.0%; height: 100.0%;"><h3>Visoko</h3><p>Near the charming village of Visoko, close to the historic Tavčar Manor.</p><img src="https://images.unsplash.com/photo-1448375240586-882707db888b" width="250"></div>`)[0];
+                popup_e3a1af1c46f3f7e8119be4c9b9da1725.setContent(html_c7c0491567da49864d871195fa3bb1c8);
+            
+        
+
+        marker_ce981f58b2881b1e5987fa746559123e.bindPopup(popup_e3a1af1c46f3f7e8119be4c9b9da1725)
+        ;
+
+        
+    
+    
+            marker_ce981f58b2881b1e5987fa746559123e.bindTooltip(
+                `<div>
+                     Visoko
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ce981f58b2881b1e5987fa746559123e.setIcon(icon_63579f7a7d4304fe34b05461946a73e3);
+            
+    
+            var marker_3982ea5a2fce022d0f6f5e22aa43b839 = L.marker(
+                [46.121, 14.18],
+                {
+}
+            ).addTo(feature_group_9e2c304a83911001a19290ea5ca82ee4);
+        
+    
+            var icon_b1ac14a02713443e4e0e58218507e795 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "tree-conifer",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bba39ce470b26b1e7c19b7abda11153f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_61a9304b32ccedd809fe30169a049859 = $(`<div id="html_61a9304b32ccedd809fe30169a049859" style="width: 100.0%; height: 100.0%;"><h3>Žiri</h3><p>A rural location on the outskirts of the town of Žiri, known for its shoemaking history.</p><img src="https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg" width="250"></div>`)[0];
+                popup_bba39ce470b26b1e7c19b7abda11153f.setContent(html_61a9304b32ccedd809fe30169a049859);
+            
+        
+
+        marker_3982ea5a2fce022d0f6f5e22aa43b839.bindPopup(popup_bba39ce470b26b1e7c19b7abda11153f)
+        ;
+
+        
+    
+    
+            marker_3982ea5a2fce022d0f6f5e22aa43b839.bindTooltip(
+                `<div>
+                     Žiri
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3982ea5a2fce022d0f6f5e22aa43b839.setIcon(icon_b1ac14a02713443e4e0e58218507e795);
+            
+    
+            var marker_bc53f05f155ee63456c519ed7f81fd14 = L.marker(
+                [46.198, 14.244],
+                {
+}
+            ).addTo(feature_group_9e2c304a83911001a19290ea5ca82ee4);
+        
+    
+            var icon_ede636d2b01a03326c706402bee37ed6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "tree-conifer",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2035db6de96b1b0d746c0c6210873c97 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_479beb6b44af651fcbde4b33bc5e15b2 = $(`<div id="html_479beb6b44af651fcbde4b33bc5e15b2" style="width: 100.0%; height: 100.0%;"><h3>Lubnik Hill</h3><p>A forested area perfect for hiking towards Lubnik hill.</p><img src="https://images.pexels.com/photos/847393/pexels-photo-847393.jpeg" width="250"></div>`)[0];
+                popup_2035db6de96b1b0d746c0c6210873c97.setContent(html_479beb6b44af651fcbde4b33bc5e15b2);
+            
+        
+
+        marker_bc53f05f155ee63456c519ed7f81fd14.bindPopup(popup_2035db6de96b1b0d746c0c6210873c97)
+        ;
+
+        
+    
+    
+            marker_bc53f05f155ee63456c519ed7f81fd14.bindTooltip(
+                `<div>
+                     Lubnik Hill
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bc53f05f155ee63456c519ed7f81fd14.setIcon(icon_ede636d2b01a03326c706402bee37ed6);
+            
+    
+            var marker_e27dd82ded5d3fb538b4a12df878d6a5 = L.marker(
+                [46.175, 14.301],
+                {
+}
+            ).addTo(feature_group_9e2c304a83911001a19290ea5ca82ee4);
+        
+    
+            var icon_fdb7a801dc6ab115067108ee5524c59a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "tree-conifer",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2ed5ba94c09d53dee9ef620fccbdb581 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5a0a8cf5b393853f3f437d3fefdb4d18 = $(`<div id="html_5a0a8cf5b393853f3f437d3fefdb4d18" style="width: 100.0%; height: 100.0%;"><h3>Cross Church</h3><p>On the scenic path to Holy Cross Church, with panoramic views of Škofja Loka.</p><img src="https://cdn.pixabay.com/photo/2018/02/09/21/46/rose-3142529_1280.jpg" width="250"></div>`)[0];
+                popup_2ed5ba94c09d53dee9ef620fccbdb581.setContent(html_5a0a8cf5b393853f3f437d3fefdb4d18);
+            
+        
+
+        marker_e27dd82ded5d3fb538b4a12df878d6a5.bindPopup(popup_2ed5ba94c09d53dee9ef620fccbdb581)
+        ;
+
+        
+    
+    
+            marker_e27dd82ded5d3fb538b4a12df878d6a5.bindTooltip(
+                `<div>
+                     Cross Church
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e27dd82ded5d3fb538b4a12df878d6a5.setIcon(icon_fdb7a801dc6ab115067108ee5524c59a);
+            
+    
+            var marker_8dab91c21c93eadf33db412bd566e397 = L.marker(
+                [46.208, 14.415],
+                {
+}
+            ).addTo(feature_group_9e2c304a83911001a19290ea5ca82ee4);
+        
+    
+            var icon_d05a499ccda10e8bbb46b0542f1eb5e0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "tree-conifer",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_684b8128726cbb13b9adab513c96daa0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0cc2a661c2bc1a8622a3b7b01025f69a = $(`<div id="html_0cc2a661c2bc1a8622a3b7b01025f69a" style="width: 100.0%; height: 100.0%;"><h3>Železniki</h3><p>Near the town of Železniki, a village famous for its ironworking heritage.</p><img src="https://cdn.pixabay.com/photo/2017/12/15/13/51/polynesia-3021072_1280.jpg" width="250"></div>`)[0];
+                popup_684b8128726cbb13b9adab513c96daa0.setContent(html_0cc2a661c2bc1a8622a3b7b01025f69a);
+            
+        
+
+        marker_8dab91c21c93eadf33db412bd566e397.bindPopup(popup_684b8128726cbb13b9adab513c96daa0)
+        ;
+
+        
+    
+    
+            marker_8dab91c21c93eadf33db412bd566e397.bindTooltip(
+                `<div>
+                     Železniki
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8dab91c21c93eadf33db412bd566e397.setIcon(icon_d05a499ccda10e8bbb46b0542f1eb5e0);
+            
+    
+            var marker_07fdcdab82c8454349c1d3e2414e2b4a = L.marker(
+                [46.021, 14.288],
+                {
+}
+            ).addTo(feature_group_9e2c304a83911001a19290ea5ca82ee4);
+        
+    
+            var icon_b2ab96b75071ddb66a67fba764b66b1c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "tree-conifer",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3c27268203fdb041cd88c8ff52a5236b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dbdbf2357dd120d93bbb5a66e4a3ef48 = $(`<div id="html_dbdbf2357dd120d93bbb5a66e4a3ef48" style="width: 100.0%; height: 100.0%;"><h3>Hills</h3><p>A quiet spot near the border of the Škofja Loka region, surrounded by rolling hills.</p><img src="https://images.unsplash.com/photo-1516426122078-c23e76319801" width="250"></div>`)[0];
+                popup_3c27268203fdb041cd88c8ff52a5236b.setContent(html_dbdbf2357dd120d93bbb5a66e4a3ef48);
+            
+        
+
+        marker_07fdcdab82c8454349c1d3e2414e2b4a.bindPopup(popup_3c27268203fdb041cd88c8ff52a5236b)
+        ;
+
+        
+    
+    
+            marker_07fdcdab82c8454349c1d3e2414e2b4a.bindTooltip(
+                `<div>
+                     Hills
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_07fdcdab82c8454349c1d3e2414e2b4a.setIcon(icon_b2ab96b75071ddb66a67fba764b66b1c);
+            
+    
+            var marker_fdc357666ff5ea67fbb6fbde0c283bb6 = L.marker(
+                [46.155, 14.366],
+                {
+}
+            ).addTo(feature_group_9e2c304a83911001a19290ea5ca82ee4);
+        
+    
+            var icon_cfd03ba56f24a23ee49f8a98a6971c69 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "tree-conifer",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6556d39c889f74c8549eac5c93a36c44 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_62fc84a2c314329a6e65cb860251ea2a = $(`<div id="html_62fc84a2c314329a6e65cb860251ea2a" style="width: 100.0%; height: 100.0%;"><h3>Suša</h3><p>A countryside location near the village of Suša, home to a small church.</p><img src="https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg" width="250"></div>`)[0];
+                popup_6556d39c889f74c8549eac5c93a36c44.setContent(html_62fc84a2c314329a6e65cb860251ea2a);
+            
+        
+
+        marker_fdc357666ff5ea67fbb6fbde0c283bb6.bindPopup(popup_6556d39c889f74c8549eac5c93a36c44)
+        ;
+
+        
+    
+    
+            marker_fdc357666ff5ea67fbb6fbde0c283bb6.bindTooltip(
+                `<div>
+                     Suša
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fdc357666ff5ea67fbb6fbde0c283bb6.setIcon(icon_cfd03ba56f24a23ee49f8a98a6971c69);
+            
+    
+            var marker_826f0dab2ec8ff389b5e93f840b65bd0 = L.marker(
+                [46.09, 14.23],
+                {
+}
+            ).addTo(feature_group_9e2c304a83911001a19290ea5ca82ee4);
+        
+    
+            var icon_ca1ed63c7eddd59d7d956de9ad6ddd2a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "tree-conifer",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cbff0c085c40fa7dd713e59359ca32e5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_55cd95e7efcd90a9a2a07b8fb57efc9e = $(`<div id="html_55cd95e7efcd90a9a2a07b8fb57efc9e" style="width: 100.0%; height: 100.0%;"><h3>Idrija Hills</h3><p>In the Idrija Hills, a peaceful area for exploring the natural landscape.</p><img src="https://cdn.pixabay.com/photo/2016/11/08/05/18/night-1807555_1280.jpg" width="250"></div>`)[0];
+                popup_cbff0c085c40fa7dd713e59359ca32e5.setContent(html_55cd95e7efcd90a9a2a07b8fb57efc9e);
+            
+        
+
+        marker_826f0dab2ec8ff389b5e93f840b65bd0.bindPopup(popup_cbff0c085c40fa7dd713e59359ca32e5)
+        ;
+
+        
+    
+    
+            marker_826f0dab2ec8ff389b5e93f840b65bd0.bindTooltip(
+                `<div>
+                     Idrija Hills
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_826f0dab2ec8ff389b5e93f840b65bd0.setIcon(icon_ca1ed63c7eddd59d7d956de9ad6ddd2a);
+            
+    
+            var marker_aa43a3b6dfea9ccbe66d79a70237ef8e = L.marker(
+                [46.21, 14.195],
+                {
+}
+            ).addTo(feature_group_9e2c304a83911001a19290ea5ca82ee4);
+        
+    
+            var icon_bd03bbe9c55b3946cc8e2112cc97413a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "tree-conifer",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d34a99afe5eeca0fe84a6ca2fbca6d37 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c3801292e0eb2fa6d1e5955a82e9272f = $(`<div id="html_c3801292e0eb2fa6d1e5955a82e9272f" style="width: 100.0%; height: 100.0%;"><h3>Rupnik Line</h3><p>A point on the Rupnik Line fortifications, offering a glimpse into Slovenia's history.</p><img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e" width="250"></div>`)[0];
+                popup_d34a99afe5eeca0fe84a6ca2fbca6d37.setContent(html_c3801292e0eb2fa6d1e5955a82e9272f);
+            
+        
+
+        marker_aa43a3b6dfea9ccbe66d79a70237ef8e.bindPopup(popup_d34a99afe5eeca0fe84a6ca2fbca6d37)
+        ;
+
+        
+    
+    
+            marker_aa43a3b6dfea9ccbe66d79a70237ef8e.bindTooltip(
+                `<div>
+                     Rupnik Line
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_aa43a3b6dfea9ccbe66d79a70237ef8e.setIcon(icon_bd03bbe9c55b3946cc8e2112cc97413a);
+            
+    
+            feature_group_9e2c304a83911001a19290ea5ca82ee4.addTo(map_6dcfd6fac51831b65a03753a48ae7c62);
+        
+    
+            var layer_control_e2507c6c3f1a4b0227ef2d2b90bce940_layers = {
+                base_layers : {
+                    "https://mt1.google.com/vt/lyrs=y\u0026x={x}\u0026y={y}\u0026z={z}" : tile_layer_d7e63f8d62ac01ab23dcb2b71dd8e971,
+                },
+                overlays :  {
+                    "Spreadsheet 1 Locations" : feature_group_96adbd949ba85c9e93fbe71949495ee6,
+                    "Spreadsheet 2 Locations" : feature_group_640c36c67a473b7425b42d8a1b76e6ea,
+                    "Spreadsheet 3 Locations" : feature_group_9e2c304a83911001a19290ea5ca82ee4,
+                },
+            };
+            let layer_control_e2507c6c3f1a4b0227ef2d2b90bce940 = L.control.layers(
+                layer_control_e2507c6c3f1a4b0227ef2d2b90bce940_layers.base_layers,
+                layer_control_e2507c6c3f1a4b0227ef2d2b90bce940_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_6dcfd6fac51831b65a03753a48ae7c62);
+
+        
+</script>
+</html>
