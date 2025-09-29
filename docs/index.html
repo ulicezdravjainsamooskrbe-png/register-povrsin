@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_9d199ec20fe9cacfe395c5b01eda3567 {
+                #map_fc7f8faa6cf26e86fde10d068ea211ad {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -54,10 +54,55 @@
 <body>
     
     
+<style>
+/* Container needed for relative positioning */
+.carousel-container {
+    position: relative;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+/* Style for the floating arrow buttons */
+.carousel-arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+    width: auto;
+    padding: 10px;
+    color: white; /* Arrow color */
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    background-color: rgba(0,0,0,0.6); /* Semi-transparent background */
+    z-index: 10; /* Ensure arrows are above the image */
+    border: none;
+    /* Optional: hide arrows when not hovering over the image area */
+    opacity: 0.8;
+}
+
+/* Position the "Next" button on the right */
+.next-arrow {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Position the "Back" button on the left */
+.prev-arrow {
+    left: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Hover effects */
+.carousel-arrow:hover {
+    background-color: rgba(0,0,0,0.9);
+}
+</style>
 <script>
     function plusDivs(n, id) {
         var slides = document.querySelectorAll('.' + id);
-        
+
         if (slides.length === 0) return;
 
         var current_index = -1;
@@ -81,14 +126,14 @@
     }
 </script>
     
-            <div class="folium-map" id="map_9d199ec20fe9cacfe395c5b01eda3567" ></div>
+            <div class="folium-map" id="map_fc7f8faa6cf26e86fde10d068ea211ad" ></div>
         
 </body>
 <script>
     
     
-            var map_9d199ec20fe9cacfe395c5b01eda3567 = L.map(
-                "map_9d199ec20fe9cacfe395c5b01eda3567",
+            var map_fc7f8faa6cf26e86fde10d068ea211ad = L.map(
+                "map_fc7f8faa6cf26e86fde10d068ea211ad",
                 {
                     center: [46.167, 14.305],
                     crs: L.CRS.EPSG3857,
@@ -105,7 +150,7 @@
 
         
     
-            var tile_layer_e5f9ab1f0e6ce5a1c3f3747bcd917189 = L.tileLayer(
+            var tile_layer_fad1954fa0d5c42dd2cc6c7c8245442c = L.tileLayer(
                 "https://mt1.google.com/vt/lyrs=y\u0026x={x}\u0026y={y}\u0026z={z}",
                 {
   "minZoom": 0,
@@ -122,10 +167,10 @@
             );
         
     
-            tile_layer_e5f9ab1f0e6ce5a1c3f3747bcd917189.addTo(map_9d199ec20fe9cacfe395c5b01eda3567);
+            tile_layer_fad1954fa0d5c42dd2cc6c7c8245442c.addTo(map_fc7f8faa6cf26e86fde10d068ea211ad);
         
     
-            var tile_layer_1f0e2e24309cebac501bcaf95de8ea4d = L.tileLayer(
+            var tile_layer_251817e9f7b4ede9f84cc2f0104cc021 = L.tileLayer(
                 "https://mt1.google.com/vt/lyrs=s\u0026x={x}\u0026y={y}\u0026z={z}",
                 {
   "minZoom": 0,
@@ -142,10 +187,10 @@
             );
         
     
-            tile_layer_1f0e2e24309cebac501bcaf95de8ea4d.addTo(map_9d199ec20fe9cacfe395c5b01eda3567);
+            tile_layer_251817e9f7b4ede9f84cc2f0104cc021.addTo(map_fc7f8faa6cf26e86fde10d068ea211ad);
         
     
-            var tile_layer_9b4c9721f4ccd06e625877efd0468618 = L.tileLayer(
+            var tile_layer_cdb4a1d4d3a8bef57ba1febb7350ac04 = L.tileLayer(
                 "https://mt1.google.com/vt/lyrs=y\u0026x={x}\u0026y={y}\u0026z={z}",
                 {
   "minZoom": 0,
@@ -163,23 +208,23 @@
             );
         
     
-            tile_layer_9b4c9721f4ccd06e625877efd0468618.addTo(map_9d199ec20fe9cacfe395c5b01eda3567);
+            tile_layer_cdb4a1d4d3a8bef57ba1febb7350ac04.addTo(map_fc7f8faa6cf26e86fde10d068ea211ad);
         
     
-            var feature_group_8c4f5ddf2003c2407cbd555af50494f8 = L.featureGroup(
+            var feature_group_3bc61307ad0cbae02f7cd4e52e6ead02 = L.featureGroup(
                 {
 }
             );
         
     
-            var marker_d3de368ea7aad649f51c74620ebce029 = L.marker(
+            var marker_6ab8e20e5634bf376f931c885a430340 = L.marker(
                 [46.168993, 14.345213],
                 {
 }
-            ).addTo(feature_group_8c4f5ddf2003c2407cbd555af50494f8);
+            ).addTo(feature_group_3bc61307ad0cbae02f7cd4e52e6ead02);
         
     
-            var icon_bf75e98851c7bdf6da0ecbf7b740f358 = L.AwesomeMarkers.icon(
+            var icon_45356393443c88ff7fc3155e4f932a39 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -190,24 +235,24 @@
             );
         
     
-        var popup_de6b6c1e8e77de22846e412737967ec7 = L.popup({
+        var popup_7475c5f80dff1b27f3055894c5ffd87c = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_370a77480f90d154f61c94e805ac6a32 = $(`<div id="html_370a77480f90d154f61c94e805ac6a32" style="width: 100.0%; height: 100.0%;"><h3>Križišče industijska cona Trata- Godešič</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     Obcestno zemljišče ob obnovljenem in na novo zgrajenem krožišču.  Zemljišče v velikosti cca 2.500 m.  Namembnost: neobdelano kmetijsko zemljišče, pozidano in sorodno zemljišče.  Trenutna uporaba: zemljišče redno vzdržuje- kosi pogodbeno podjetje, kar predstavlja redne stroške občinskemu proračunu.  Predlog preureditve: zemljišče se preuredi za namen gojenja energetskih rastlin npr. zasaditev miskanta po celotni površini. Uporaba miskanta za gorivo v obliki pelet, briketov ali sekancev. Ter kot zastirka na vrtovih ali stelja za konje. Oddaja zemljišča v dolgoročni najem ali brezplačno uporabo.                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
-                popup_de6b6c1e8e77de22846e412737967ec7.setContent(html_370a77480f90d154f61c94e805ac6a32);
+                var html_e33b9c6cd126f820473f98d9b47fd026 = $(`<div id="html_e33b9c6cd126f820473f98d9b47fd026" style="width: 100.0%; height: 100.0%;"><h3>Križišče industijska cona Trata- Godešič</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     Obcestno zemljišče ob obnovljenem in na novo zgrajenem krožišču.  Zemljišče v velikosti cca 2.500 m.  Namembnost: neobdelano kmetijsko zemljišče, pozidano in sorodno zemljišče.  Trenutna uporaba: zemljišče redno vzdržuje- kosi pogodbeno podjetje, kar predstavlja redne stroške občinskemu proračunu.  Predlog preureditve: zemljišče se preuredi za namen gojenja energetskih rastlin npr. zasaditev miskanta po celotni površini. Uporaba miskanta za gorivo v obliki pelet, briketov ali sekancev. Ter kot zastirka na vrtovih ali stelja za konje. Oddaja zemljišča v dolgoročni najem ali brezplačno uporabo.                 </div>             <hr style='margin: 5px 0;'>                 <div id="carousel-0" class="carousel-container">                                              <img class="mySlides carousel-0" src="images/20221013_081701.jpg" style="width:100%; display:block;" alt="Image 1">                                           <button class="carousel-arrow prev-arrow" onclick="plusDivs(-1, 'carousel-0')">&#10094;</button>                     <button class="carousel-arrow next-arrow" onclick="plusDivs(1, 'carousel-0')">&#10095;</button>                 </div>                 </div>`)[0];
+                popup_7475c5f80dff1b27f3055894c5ffd87c.setContent(html_e33b9c6cd126f820473f98d9b47fd026);
             
         
 
-        marker_d3de368ea7aad649f51c74620ebce029.bindPopup(popup_de6b6c1e8e77de22846e412737967ec7)
+        marker_6ab8e20e5634bf376f931c885a430340.bindPopup(popup_7475c5f80dff1b27f3055894c5ffd87c)
         ;
 
         
     
     
-            marker_d3de368ea7aad649f51c74620ebce029.bindTooltip(
+            marker_6ab8e20e5634bf376f931c885a430340.bindTooltip(
                 `<div>
                      Križišče industijska cona Trata- Godešič
                  </div>`,
@@ -217,17 +262,17 @@
             );
         
     
-                marker_d3de368ea7aad649f51c74620ebce029.setIcon(icon_bf75e98851c7bdf6da0ecbf7b740f358);
+                marker_6ab8e20e5634bf376f931c885a430340.setIcon(icon_45356393443c88ff7fc3155e4f932a39);
             
     
-            var marker_ef4cf7707969247db429d68e67bed7c5 = L.marker(
+            var marker_3686d0dec9a94fdda9f37a2ea906002d = L.marker(
                 [46.150739, 14.362193],
                 {
 }
-            ).addTo(feature_group_8c4f5ddf2003c2407cbd555af50494f8);
+            ).addTo(feature_group_3bc61307ad0cbae02f7cd4e52e6ead02);
         
     
-            var icon_f643253620f01c7da6e2cb0f5845676f = L.AwesomeMarkers.icon(
+            var icon_db8d4f55b1b6314da5a53f95b1558e76 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -238,24 +283,24 @@
             );
         
     
-        var popup_dbd047736ae363f99dff9f98452efc87 = L.popup({
+        var popup_9aaf8b83c02284d1c21efec23f48d373 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_5e867c8241f9502ad6765f25a2141ae9 = $(`<div id="html_5e867c8241f9502ad6765f25a2141ae9" style="width: 100.0%; height: 100.0%;"><h3>Zbirni center Draga</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     Zemljišče na nekdanjem deponiji Draga. Zemljišče v  velikosti 10.000 m2. Namembnost: neobdelano kmetijsko zemljišče, pozidano in sorodno zemljišče. Trenutna uporaba: zemljišče se zarašča s hitro rastočili drevesnimi vrstami, travami ter invazivnimi vrstami, deloma se na zemljišče odlaga gradbeni odpad.  Predlog preureditve: zemljišče se preuredi za namen gojenja energetskih rastlin npr. zasaditev miskanta po  vrhnji ravni površini ter hitro rastočih drevesnih vrst po brežini. Uporaba: miskanta za gorivo v obliki pelet, briketov ali sekancev. Ter kot zastirka na vrtovih ali stelja za konje. Uporaba hitrorastočih drevesnih vrst za gorivo v obliki sekancev. Oddaja zemljišča v dolgoročni najem ali gospodarjenje s površino.                 </div>             <hr style='margin: 5px 0;'>                 <div id="carousel-1" class="carousel-container">                                              <img class="mySlides carousel-1" src="images/draga_1.jpg" style="width:100%; display:block;" alt="Image 1">                                              <img class="mySlides carousel-1" src="images/draga_2.jpg" style="width:100%; display:none;" alt="Image 2">                                              <img class="mySlides carousel-1" src="images/draga_3.jpg" style="width:100%; display:none;" alt="Image 3">                                                               <button class="carousel-arrow prev-arrow" onclick="plusDivs(-1, 'carousel-1')">&#10094;</button>                     <button class="carousel-arrow next-arrow" onclick="plusDivs(1, 'carousel-1')">&#10095;</button>                 </div>                 </div>`)[0];
-                popup_dbd047736ae363f99dff9f98452efc87.setContent(html_5e867c8241f9502ad6765f25a2141ae9);
+                var html_b0a5db17a0ca621d37fa73161dfe6797 = $(`<div id="html_b0a5db17a0ca621d37fa73161dfe6797" style="width: 100.0%; height: 100.0%;"><h3>Zbirni center Draga</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     Zemljišče na nekdanjem deponiji Draga. Zemljišče v  velikosti 10.000 m2. Namembnost: neobdelano kmetijsko zemljišče, pozidano in sorodno zemljišče. Trenutna uporaba: zemljišče se zarašča s hitro rastočili drevesnimi vrstami, travami ter invazivnimi vrstami, deloma se na zemljišče odlaga gradbeni odpad.  Predlog preureditve: zemljišče se preuredi za namen gojenja energetskih rastlin npr. zasaditev miskanta po  vrhnji ravni površini ter hitro rastočih drevesnih vrst po brežini. Uporaba: miskanta za gorivo v obliki pelet, briketov ali sekancev. Ter kot zastirka na vrtovih ali stelja za konje. Uporaba hitrorastočih drevesnih vrst za gorivo v obliki sekancev. Oddaja zemljišča v dolgoročni najem ali gospodarjenje s površino.                 </div>             <hr style='margin: 5px 0;'>                 <div id="carousel-1" class="carousel-container">                                              <img class="mySlides carousel-1" src="images/draga_1.jpg" style="width:100%; display:block;" alt="Image 1">                                              <img class="mySlides carousel-1" src="images/draga_2.jpg" style="width:100%; display:none;" alt="Image 2">                                              <img class="mySlides carousel-1" src="images/draga_3.jpg" style="width:100%; display:none;" alt="Image 3">                                           <button class="carousel-arrow prev-arrow" onclick="plusDivs(-1, 'carousel-1')">&#10094;</button>                     <button class="carousel-arrow next-arrow" onclick="plusDivs(1, 'carousel-1')">&#10095;</button>                 </div>                 </div>`)[0];
+                popup_9aaf8b83c02284d1c21efec23f48d373.setContent(html_b0a5db17a0ca621d37fa73161dfe6797);
             
         
 
-        marker_ef4cf7707969247db429d68e67bed7c5.bindPopup(popup_dbd047736ae363f99dff9f98452efc87)
+        marker_3686d0dec9a94fdda9f37a2ea906002d.bindPopup(popup_9aaf8b83c02284d1c21efec23f48d373)
         ;
 
         
     
     
-            marker_ef4cf7707969247db429d68e67bed7c5.bindTooltip(
+            marker_3686d0dec9a94fdda9f37a2ea906002d.bindTooltip(
                 `<div>
                      Zbirni center Draga
                  </div>`,
@@ -265,17 +310,17 @@
             );
         
     
-                marker_ef4cf7707969247db429d68e67bed7c5.setIcon(icon_f643253620f01c7da6e2cb0f5845676f);
+                marker_3686d0dec9a94fdda9f37a2ea906002d.setIcon(icon_db8d4f55b1b6314da5a53f95b1558e76);
             
     
-            var marker_ef72f81fb452b1bed6d1a09b46bb5327 = L.marker(
+            var marker_a30ec00146f56874b271a475035b08d4 = L.marker(
                 [46.174744, 14.316386],
                 {
 }
-            ).addTo(feature_group_8c4f5ddf2003c2407cbd555af50494f8);
+            ).addTo(feature_group_3bc61307ad0cbae02f7cd4e52e6ead02);
         
     
-            var icon_4d567f29248ea885373300d1f2acd3a2 = L.AwesomeMarkers.icon(
+            var icon_67e8b8512255d10c5534ec00bdbd8997 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -286,24 +331,24 @@
             );
         
     
-        var popup_e3251ff744c11bb512e4b6f01a5b8e5f = L.popup({
+        var popup_0ff6f359261041cf73af47d41aa86ba3 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_e3d4db91a04ac983110fe627788f6937 = $(`<div id="html_e3d4db91a04ac983110fe627788f6937" style="width: 100.0%; height: 100.0%;"><h3>Usedalnik Tehnik</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     Zemljišče industrijski coni Tehnik Zemljišče v  velikosti 3.100 m2. Namembnost: pozidano in sorodno zemljišče. Trenutna uporaba: zemljišče se uporablja za deponiranje finih delcev- gline pridobljene pri separaciji ter pranju agregatov. Predlog preureditve: zemljišče se preuredi za dvojno uporabo. Obdrži naj vlogo deponije ter zadrževanika meteornih vod ter dodatno kot ribnik za gojenje krapov- pridelava ribjega mesa. Vzpostaviti bi bilo potrebno ekosistem, ki bi omogočal trenutno uporabo kot tudi gojenje rib. Uporaba: Gojenje krapov (neintenzivno gojenje) za prehrano ljudi. Uporaba sedimentov- finih delcev v gradbeništvu. Oddaja zemljišča v upravljanje.                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
-                popup_e3251ff744c11bb512e4b6f01a5b8e5f.setContent(html_e3d4db91a04ac983110fe627788f6937);
+                var html_65cbf73d71dc4e1e4dbdae666de595d6 = $(`<div id="html_65cbf73d71dc4e1e4dbdae666de595d6" style="width: 100.0%; height: 100.0%;"><h3>Usedalnik Tehnik</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     Zemljišče industrijski coni Tehnik Zemljišče v  velikosti 3.100 m2. Namembnost: pozidano in sorodno zemljišče. Trenutna uporaba: zemljišče se uporablja za deponiranje finih delcev- gline pridobljene pri separaciji ter pranju agregatov. Predlog preureditve: zemljišče se preuredi za dvojno uporabo. Obdrži naj vlogo deponije ter zadrževanika meteornih vod ter dodatno kot ribnik za gojenje krapov- pridelava ribjega mesa. Vzpostaviti bi bilo potrebno ekosistem, ki bi omogočal trenutno uporabo kot tudi gojenje rib. Uporaba: Gojenje krapov (neintenzivno gojenje) za prehrano ljudi. Uporaba sedimentov- finih delcev v gradbeništvu. Oddaja zemljišča v upravljanje.                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
+                popup_0ff6f359261041cf73af47d41aa86ba3.setContent(html_65cbf73d71dc4e1e4dbdae666de595d6);
             
         
 
-        marker_ef72f81fb452b1bed6d1a09b46bb5327.bindPopup(popup_e3251ff744c11bb512e4b6f01a5b8e5f)
+        marker_a30ec00146f56874b271a475035b08d4.bindPopup(popup_0ff6f359261041cf73af47d41aa86ba3)
         ;
 
         
     
     
-            marker_ef72f81fb452b1bed6d1a09b46bb5327.bindTooltip(
+            marker_a30ec00146f56874b271a475035b08d4.bindTooltip(
                 `<div>
                      Usedalnik Tehnik
                  </div>`,
@@ -313,17 +358,17 @@
             );
         
     
-                marker_ef72f81fb452b1bed6d1a09b46bb5327.setIcon(icon_4d567f29248ea885373300d1f2acd3a2);
+                marker_a30ec00146f56874b271a475035b08d4.setIcon(icon_67e8b8512255d10c5534ec00bdbd8997);
             
     
-            var marker_c05d5886cd1f42e1326f1eb86ecf785c = L.marker(
+            var marker_b1883ae612d732086b3a4bfb007a1f71 = L.marker(
                 [46.186383, 14.330807],
                 {
 }
-            ).addTo(feature_group_8c4f5ddf2003c2407cbd555af50494f8);
+            ).addTo(feature_group_3bc61307ad0cbae02f7cd4e52e6ead02);
         
     
-            var icon_a716ef646ad0b69600a488964af1ad3d = L.AwesomeMarkers.icon(
+            var icon_77e571e2e4885095a1b92c2bcfa43e81 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -334,24 +379,24 @@
             );
         
     
-        var popup_0cbe3acf3143b072d2bb7831fa61ffd6 = L.popup({
+        var popup_883c4c420a6a23f2492ad3d28880f3c3 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_43e1ad3032fa48210f5ab0c956d132f8 = $(`<div id="html_43e1ad3032fa48210f5ab0c956d132f8" style="width: 100.0%; height: 100.0%;"><h3>1. Vzporeden kolovoz - polje Sveti Duh</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     Mejno zemljišče med dvema njivama na Soškem polju Zemljišče v  velikosti 2.400 m2. Namembnost:  pozidano in sorodno zemljišče. Trenutna uporaba: zemljišče predstavlja dva kolovoza, ki sta na razdalji 350 m vzporedno peljana vsak po svoji strani parcele. Predlog preureditve: zemljišče se preuredi tako, da se namesto dveh vzporednih kolovozov vzpostavi en kolovoz, pri čemer je vsaka od kolesnic speljana po svoji strani parcelne meje. Kolovoz bi bil v soupravljanju obeh lastnikov parcel. Potreben bi bil dogovor med lastnikoma ki bi omogočal tako preureditev Uporaba: z preureditvijo kolovoza, bi pridobili 1.200 m2 njivske površine. Obstoječa obdelovalna površina vsakega lastnika bi se povečala za 600 m2.                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
-                popup_0cbe3acf3143b072d2bb7831fa61ffd6.setContent(html_43e1ad3032fa48210f5ab0c956d132f8);
+                var html_56cfb5de130e62a038660563a1130b78 = $(`<div id="html_56cfb5de130e62a038660563a1130b78" style="width: 100.0%; height: 100.0%;"><h3>1. Vzporeden kolovoz - polje Sveti Duh</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     Mejno zemljišče med dvema njivama na Soškem polju Zemljišče v  velikosti 2.400 m2. Namembnost:  pozidano in sorodno zemljišče. Trenutna uporaba: zemljišče predstavlja dva kolovoza, ki sta na razdalji 350 m vzporedno peljana vsak po svoji strani parcele. Predlog preureditve: zemljišče se preuredi tako, da se namesto dveh vzporednih kolovozov vzpostavi en kolovoz, pri čemer je vsaka od kolesnic speljana po svoji strani parcelne meje. Kolovoz bi bil v soupravljanju obeh lastnikov parcel. Potreben bi bil dogovor med lastnikoma ki bi omogočal tako preureditev Uporaba: z preureditvijo kolovoza, bi pridobili 1.200 m2 njivske površine. Obstoječa obdelovalna površina vsakega lastnika bi se povečala za 600 m2.                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
+                popup_883c4c420a6a23f2492ad3d28880f3c3.setContent(html_56cfb5de130e62a038660563a1130b78);
             
         
 
-        marker_c05d5886cd1f42e1326f1eb86ecf785c.bindPopup(popup_0cbe3acf3143b072d2bb7831fa61ffd6)
+        marker_b1883ae612d732086b3a4bfb007a1f71.bindPopup(popup_883c4c420a6a23f2492ad3d28880f3c3)
         ;
 
         
     
     
-            marker_c05d5886cd1f42e1326f1eb86ecf785c.bindTooltip(
+            marker_b1883ae612d732086b3a4bfb007a1f71.bindTooltip(
                 `<div>
                      1. Vzporeden kolovoz - polje Sveti Duh
                  </div>`,
@@ -361,17 +406,17 @@
             );
         
     
-                marker_c05d5886cd1f42e1326f1eb86ecf785c.setIcon(icon_a716ef646ad0b69600a488964af1ad3d);
+                marker_b1883ae612d732086b3a4bfb007a1f71.setIcon(icon_77e571e2e4885095a1b92c2bcfa43e81);
             
     
-            var marker_1f9e522799a9bdcdafd52dce81b4fae0 = L.marker(
+            var marker_df4ed8d42d2e170d96433fdaa69c0efd = L.marker(
                 [46.186899, 14.330761],
                 {
 }
-            ).addTo(feature_group_8c4f5ddf2003c2407cbd555af50494f8);
+            ).addTo(feature_group_3bc61307ad0cbae02f7cd4e52e6ead02);
         
     
-            var icon_7fea137ab6ff1cb8a736602fc3fceeb1 = L.AwesomeMarkers.icon(
+            var icon_67a3232b509d2dd7ae21b43aef47b5fd = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -382,24 +427,24 @@
             );
         
     
-        var popup_0bd2e5a6da6973b7f277a57a4024859a = L.popup({
+        var popup_835a0f77be9fb374387fbb1b088cf5c2 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_57e90700ac1a8776d98d1f9f7b844a79 = $(`<div id="html_57e90700ac1a8776d98d1f9f7b844a79" style="width: 100.0%; height: 100.0%;"><h3>2. Vzporeden kolovoz - polje Sveti Duh</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     Mejno zemljišče med dvema njivama na Soškem polju Zemljišče v  velikosti 1.800 m2. Namembnost:  pozidano in sorodno zemljišče. Trenutna uporaba: zemljišče predstavlja dva kolovoza, ki sta na razdalji 330 m vzporedno peljana vsak po svoji strani parcele. Predlog preureditve: zemljišče se preuredi tako, da se namesto dveh vzporednih kolovozov vzpostavi en kolovoz, pri čemer je vsaka od kolesnic speljana po svoji strani parcelne meje. Kolovoz bi bil v soupravljanju obeh lastnikov parcel. Potreben bi bil dogovor med lastnikoma ki bi omogočal tako preureditev Uporaba: z preureditvijo kolovoza, bi pridobili 900 m2 njivske površine. Obstoječa obdelovalna površina vsakega lastnika bi se povečala za 450 m2.                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
-                popup_0bd2e5a6da6973b7f277a57a4024859a.setContent(html_57e90700ac1a8776d98d1f9f7b844a79);
+                var html_6129ef5e9f37cb3e6b223328b34452d7 = $(`<div id="html_6129ef5e9f37cb3e6b223328b34452d7" style="width: 100.0%; height: 100.0%;"><h3>2. Vzporeden kolovoz - polje Sveti Duh</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     Mejno zemljišče med dvema njivama na Soškem polju Zemljišče v  velikosti 1.800 m2. Namembnost:  pozidano in sorodno zemljišče. Trenutna uporaba: zemljišče predstavlja dva kolovoza, ki sta na razdalji 330 m vzporedno peljana vsak po svoji strani parcele. Predlog preureditve: zemljišče se preuredi tako, da se namesto dveh vzporednih kolovozov vzpostavi en kolovoz, pri čemer je vsaka od kolesnic speljana po svoji strani parcelne meje. Kolovoz bi bil v soupravljanju obeh lastnikov parcel. Potreben bi bil dogovor med lastnikoma ki bi omogočal tako preureditev Uporaba: z preureditvijo kolovoza, bi pridobili 900 m2 njivske površine. Obstoječa obdelovalna površina vsakega lastnika bi se povečala za 450 m2.                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
+                popup_835a0f77be9fb374387fbb1b088cf5c2.setContent(html_6129ef5e9f37cb3e6b223328b34452d7);
             
         
 
-        marker_1f9e522799a9bdcdafd52dce81b4fae0.bindPopup(popup_0bd2e5a6da6973b7f277a57a4024859a)
+        marker_df4ed8d42d2e170d96433fdaa69c0efd.bindPopup(popup_835a0f77be9fb374387fbb1b088cf5c2)
         ;
 
         
     
     
-            marker_1f9e522799a9bdcdafd52dce81b4fae0.bindTooltip(
+            marker_df4ed8d42d2e170d96433fdaa69c0efd.bindTooltip(
                 `<div>
                      2. Vzporeden kolovoz - polje Sveti Duh
                  </div>`,
@@ -409,17 +454,17 @@
             );
         
     
-                marker_1f9e522799a9bdcdafd52dce81b4fae0.setIcon(icon_7fea137ab6ff1cb8a736602fc3fceeb1);
+                marker_df4ed8d42d2e170d96433fdaa69c0efd.setIcon(icon_67a3232b509d2dd7ae21b43aef47b5fd);
             
     
-            var marker_1c10389b9914489f866ae95df7858217 = L.marker(
+            var marker_cc0aebf8f96b83726e972bcb3b4daf6c = L.marker(
                 [46.187446, 14.330683],
                 {
 }
-            ).addTo(feature_group_8c4f5ddf2003c2407cbd555af50494f8);
+            ).addTo(feature_group_3bc61307ad0cbae02f7cd4e52e6ead02);
         
     
-            var icon_cc58f4c654eee90235689d91ed352ab5 = L.AwesomeMarkers.icon(
+            var icon_82b4e6ac7bcf7570e07f182fd301bc03 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -430,24 +475,24 @@
             );
         
     
-        var popup_f56ee2d49a57d6f970777f217a881c8e = L.popup({
+        var popup_095db762d170902fe030d6233477ee9e = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_09d6cc5c44e1267dfcd0c7a1b0c84f80 = $(`<div id="html_09d6cc5c44e1267dfcd0c7a1b0c84f80" style="width: 100.0%; height: 100.0%;"><h3>3. Vzporeden kolovoz - polje Sveti Duh</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     Mejno zemljišče med dvema njivama na Soškem polju Zemljišče v  velikosti 1.300 m2. Namembnost:  pozidano in sorodno zemljišče. Trenutna uporaba: zemljišče predstavlja dva kolovoza, ki sta na razdalji 270 m vzporedno peljana vsak po svoji strani parcele. Predlog preureditve: zemljišče se preuredi tako, da se namesto dveh vzporednih kolovozov vzpostavi en kolovoz, pri čemer je vsaka od kolesnic speljana po svoji strani parcelne meje. Kolovoz bi bil v soupravljanju obeh lastnikov parcel. Potreben bi bil dogovor med lastnikoma ki bi omogočal tako preureditev Uporaba: z preureditvijo kolovoza, bi pridobili 650 m2 njivske površine. Obstoječa obdelovalna površina vsakega lastnika bi se povečala za 325 m2.                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
-                popup_f56ee2d49a57d6f970777f217a881c8e.setContent(html_09d6cc5c44e1267dfcd0c7a1b0c84f80);
+                var html_11a617277f8aafb49133e80f8e0e510d = $(`<div id="html_11a617277f8aafb49133e80f8e0e510d" style="width: 100.0%; height: 100.0%;"><h3>3. Vzporeden kolovoz - polje Sveti Duh</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     Mejno zemljišče med dvema njivama na Soškem polju Zemljišče v  velikosti 1.300 m2. Namembnost:  pozidano in sorodno zemljišče. Trenutna uporaba: zemljišče predstavlja dva kolovoza, ki sta na razdalji 270 m vzporedno peljana vsak po svoji strani parcele. Predlog preureditve: zemljišče se preuredi tako, da se namesto dveh vzporednih kolovozov vzpostavi en kolovoz, pri čemer je vsaka od kolesnic speljana po svoji strani parcelne meje. Kolovoz bi bil v soupravljanju obeh lastnikov parcel. Potreben bi bil dogovor med lastnikoma ki bi omogočal tako preureditev Uporaba: z preureditvijo kolovoza, bi pridobili 650 m2 njivske površine. Obstoječa obdelovalna površina vsakega lastnika bi se povečala za 325 m2.                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
+                popup_095db762d170902fe030d6233477ee9e.setContent(html_11a617277f8aafb49133e80f8e0e510d);
             
         
 
-        marker_1c10389b9914489f866ae95df7858217.bindPopup(popup_f56ee2d49a57d6f970777f217a881c8e)
+        marker_cc0aebf8f96b83726e972bcb3b4daf6c.bindPopup(popup_095db762d170902fe030d6233477ee9e)
         ;
 
         
     
     
-            marker_1c10389b9914489f866ae95df7858217.bindTooltip(
+            marker_cc0aebf8f96b83726e972bcb3b4daf6c.bindTooltip(
                 `<div>
                      3. Vzporeden kolovoz - polje Sveti Duh
                  </div>`,
@@ -457,26 +502,122 @@
             );
         
     
-                marker_1c10389b9914489f866ae95df7858217.setIcon(icon_cc58f4c654eee90235689d91ed352ab5);
+                marker_cc0aebf8f96b83726e972bcb3b4daf6c.setIcon(icon_82b4e6ac7bcf7570e07f182fd301bc03);
             
     
-            feature_group_8c4f5ddf2003c2407cbd555af50494f8.addTo(map_9d199ec20fe9cacfe395c5b01eda3567);
+            var marker_14790238454452c1fdb5ecbb355804c1 = L.marker(
+                [46.164191, 14.309371],
+                {
+}
+            ).addTo(feature_group_3bc61307ad0cbae02f7cd4e52e6ead02);
         
     
-            var feature_group_76348e5ba7b2ba885f4912af0dfd87aa = L.featureGroup(
+            var icon_cc4e5f7e227ba9ff07381fd7c5587f1d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_50598582ffb687b9d256ccfd9b3d7b7c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1130dbf58d0977744f1c0a7f64415917 = $(`<div id="html_1130dbf58d0977744f1c0a7f64415917" style="width: 100.0%; height: 100.0%;"><h3>1. Studenec</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     Zemljišče nekdanjega sadovnjaka ter vrta zasebnega lastnika. Zemljišče v velikosti 850 m2. Namembnost: pozidano in sorodno zemljišče. Trenutna uporaba: zemljišče je v preteklosti pred poplavami leta 2023 predstavljalo sadovnak ter zelenjavni vrt zasebnega lastnika. Zaradi poplavne ogroženosti so se lastniki izselili. Vrt je v zaraščanju. Predlog preureditve: zemljišče se preuredi v skupnostne vrtove. Zemljišče prav tako omogoča postavitev vrtnih lop, plastenjaka, parkirišča za najemnike ter vgradnje zalogovnikov za vodo.  Zemljišče je rodovitno in že ima nekaj infrastrukture- parkirišče, ogrado,,....                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
+                popup_50598582ffb687b9d256ccfd9b3d7b7c.setContent(html_1130dbf58d0977744f1c0a7f64415917);
+            
+        
+
+        marker_14790238454452c1fdb5ecbb355804c1.bindPopup(popup_50598582ffb687b9d256ccfd9b3d7b7c)
+        ;
+
+        
+    
+    
+            marker_14790238454452c1fdb5ecbb355804c1.bindTooltip(
+                `<div>
+                     1. Studenec
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_14790238454452c1fdb5ecbb355804c1.setIcon(icon_cc4e5f7e227ba9ff07381fd7c5587f1d);
+            
+    
+            var marker_6854b9f0c10877da005a4ccef948660f = L.marker(
+                [46.164735, 14.309678],
+                {
+}
+            ).addTo(feature_group_3bc61307ad0cbae02f7cd4e52e6ead02);
+        
+    
+            var icon_c6430b5e3f2f19243e53f4dbf07125be = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_62b9e5e3c79ba9659fcb754c692a13e2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fdba0382b0c2525e66a3dcff9c4f3703 = $(`<div id="html_fdba0382b0c2525e66a3dcff9c4f3703" style="width: 100.0%; height: 100.0%;"><h3>2. Studenec</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     Zemljišče predstavlja zelenico z drevoredom lip, ki je v občinski lasti. Zemljišče v velikosti 1.500 m2. Namembnost: pozidano in sorodno zemljišče. Trenutna uporaba: zemljišče redno vzdržuje- kosi pogodbeno podjetje, kar predstavlja redne stroške občinskemu proračunu. Predlog preureditve: zemljišče je zaradi drevoreda lip, ki stoji vzdolž reke Poljanske Sore deloma osenčeno. Zemljišče se preuredi v sadovnjak s sadnimi grmovnicami, npr. ribes, maline, robide. Vzpostavi se skupnostni sadovnjak.                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
+                popup_62b9e5e3c79ba9659fcb754c692a13e2.setContent(html_fdba0382b0c2525e66a3dcff9c4f3703);
+            
+        
+
+        marker_6854b9f0c10877da005a4ccef948660f.bindPopup(popup_62b9e5e3c79ba9659fcb754c692a13e2)
+        ;
+
+        
+    
+    
+            marker_6854b9f0c10877da005a4ccef948660f.bindTooltip(
+                `<div>
+                     2. Studenec
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6854b9f0c10877da005a4ccef948660f.setIcon(icon_c6430b5e3f2f19243e53f4dbf07125be);
+            
+    
+            feature_group_3bc61307ad0cbae02f7cd4e52e6ead02.addTo(map_fc7f8faa6cf26e86fde10d068ea211ad);
+        
+    
+            var feature_group_abcc9178f1d5df4083dc17371db9c202 = L.featureGroup(
                 {
 }
             );
         
     
-            var marker_1b6df332de0ba9996f04e4b14efb65ff = L.marker(
+            var marker_0a3bab008c0defd5e722eebbbed1e885 = L.marker(
                 [46.167, 14.305],
                 {
 }
-            ).addTo(feature_group_76348e5ba7b2ba885f4912af0dfd87aa);
+            ).addTo(feature_group_abcc9178f1d5df4083dc17371db9c202);
         
     
-            var icon_dc2efb77d48c01939e59f3ec2c528eb9 = L.AwesomeMarkers.icon(
+            var icon_ac759f5627a82c49fa3c5f1daeb3ac20 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "red",
   "iconColor": "white",
@@ -487,24 +628,24 @@
             );
         
     
-        var popup_7afc6cc515ab559528aa285767eea5e1 = L.popup({
+        var popup_caf78f31b0c3da9a4f9a5504e8f8eca3 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_bbdd3fdce0cfcc59c647c489fa562577 = $(`<div id="html_bbdd3fdce0cfcc59c647c489fa562577" style="width: 100.0%; height: 100.0%;"><h3>Poljanska Sora</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     Škofja Loka historic center featuring the famous Capuchin Bridge and preserved medieval architecture.                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
-                popup_7afc6cc515ab559528aa285767eea5e1.setContent(html_bbdd3fdce0cfcc59c647c489fa562577);
+                var html_234c35f7b03ba94e8be2576646278a39 = $(`<div id="html_234c35f7b03ba94e8be2576646278a39" style="width: 100.0%; height: 100.0%;"><h3>Poljanska Sora</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     Škofja Loka historic center featuring the famous Capuchin Bridge and preserved medieval architecture.                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
+                popup_caf78f31b0c3da9a4f9a5504e8f8eca3.setContent(html_234c35f7b03ba94e8be2576646278a39);
             
         
 
-        marker_1b6df332de0ba9996f04e4b14efb65ff.bindPopup(popup_7afc6cc515ab559528aa285767eea5e1)
+        marker_0a3bab008c0defd5e722eebbbed1e885.bindPopup(popup_caf78f31b0c3da9a4f9a5504e8f8eca3)
         ;
 
         
     
     
-            marker_1b6df332de0ba9996f04e4b14efb65ff.bindTooltip(
+            marker_0a3bab008c0defd5e722eebbbed1e885.bindTooltip(
                 `<div>
                      Poljanska Sora
                  </div>`,
@@ -514,17 +655,17 @@
             );
         
     
-                marker_1b6df332de0ba9996f04e4b14efb65ff.setIcon(icon_dc2efb77d48c01939e59f3ec2c528eb9);
+                marker_0a3bab008c0defd5e722eebbbed1e885.setIcon(icon_ac759f5627a82c49fa3c5f1daeb3ac20);
             
     
-            var marker_5808abf4337f7f49aedf614ecabf274d = L.marker(
+            var marker_0e23701012093e3e3a70863ac3f5d4b7 = L.marker(
                 [46.173, 14.314],
                 {
 }
-            ).addTo(feature_group_76348e5ba7b2ba885f4912af0dfd87aa);
+            ).addTo(feature_group_abcc9178f1d5df4083dc17371db9c202);
         
     
-            var icon_65945e6f4bc7294d4b9e8909a29deed9 = L.AwesomeMarkers.icon(
+            var icon_2411cce8102d5392b41e142228c64bfe = L.AwesomeMarkers.icon(
                 {
   "markerColor": "red",
   "iconColor": "white",
@@ -535,24 +676,24 @@
             );
         
     
-        var popup_ff14c023b11e658bfc11e9f7215147eb = L.popup({
+        var popup_748d9b274da6ead2dbce1e536108ada3 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_0b6bb0a3cce227999491002edac04f0b = $(`<div id="html_0b6bb0a3cce227999491002edac04f0b" style="width: 100.0%; height: 100.0%;"><h3>Visoko</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     The picturesque village of Puštal connected to Škofja Loka by the scenic Devil Bridge.                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
-                popup_ff14c023b11e658bfc11e9f7215147eb.setContent(html_0b6bb0a3cce227999491002edac04f0b);
+                var html_75495f6d4d9e57646e86e1dc00bf4440 = $(`<div id="html_75495f6d4d9e57646e86e1dc00bf4440" style="width: 100.0%; height: 100.0%;"><h3>Visoko</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     The picturesque village of Puštal connected to Škofja Loka by the scenic Devil Bridge.                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
+                popup_748d9b274da6ead2dbce1e536108ada3.setContent(html_75495f6d4d9e57646e86e1dc00bf4440);
             
         
 
-        marker_5808abf4337f7f49aedf614ecabf274d.bindPopup(popup_ff14c023b11e658bfc11e9f7215147eb)
+        marker_0e23701012093e3e3a70863ac3f5d4b7.bindPopup(popup_748d9b274da6ead2dbce1e536108ada3)
         ;
 
         
     
     
-            marker_5808abf4337f7f49aedf614ecabf274d.bindTooltip(
+            marker_0e23701012093e3e3a70863ac3f5d4b7.bindTooltip(
                 `<div>
                      Visoko
                  </div>`,
@@ -562,17 +703,17 @@
             );
         
     
-                marker_5808abf4337f7f49aedf614ecabf274d.setIcon(icon_65945e6f4bc7294d4b9e8909a29deed9);
+                marker_0e23701012093e3e3a70863ac3f5d4b7.setIcon(icon_2411cce8102d5392b41e142228c64bfe);
             
     
-            var marker_849615e6feb2f98327b266194ef09ff6 = L.marker(
+            var marker_a830e6190c9bc6bedfb0cc2a4013c804 = L.marker(
                 [46.17, 14.31],
                 {
 }
-            ).addTo(feature_group_76348e5ba7b2ba885f4912af0dfd87aa);
+            ).addTo(feature_group_abcc9178f1d5df4083dc17371db9c202);
         
     
-            var icon_5a6ee9413b1683b8f1416ca87ac67f04 = L.AwesomeMarkers.icon(
+            var icon_4c9f20c78c00feea8edabd95fb01e115 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "red",
   "iconColor": "white",
@@ -583,24 +724,24 @@
             );
         
     
-        var popup_bd51c9d728228a3d41fc543995c32335 = L.popup({
+        var popup_be5002409a5dd46c396b2b04d330b592 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_0d7765fbf5cb790ff1c7ee9675028c83 = $(`<div id="html_0d7765fbf5cb790ff1c7ee9675028c83" style="width: 100.0%; height: 100.0%;"><h3>Žiri</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     A viewpoint on the trail to the Holy Cross Church offering a panoramic view of the town and castle.                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
-                popup_bd51c9d728228a3d41fc543995c32335.setContent(html_0d7765fbf5cb790ff1c7ee9675028c83);
+                var html_80792715596e8ec960d27938fb459ae8 = $(`<div id="html_80792715596e8ec960d27938fb459ae8" style="width: 100.0%; height: 100.0%;"><h3>Žiri</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     A viewpoint on the trail to the Holy Cross Church offering a panoramic view of the town and castle.                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
+                popup_be5002409a5dd46c396b2b04d330b592.setContent(html_80792715596e8ec960d27938fb459ae8);
             
         
 
-        marker_849615e6feb2f98327b266194ef09ff6.bindPopup(popup_bd51c9d728228a3d41fc543995c32335)
+        marker_a830e6190c9bc6bedfb0cc2a4013c804.bindPopup(popup_be5002409a5dd46c396b2b04d330b592)
         ;
 
         
     
     
-            marker_849615e6feb2f98327b266194ef09ff6.bindTooltip(
+            marker_a830e6190c9bc6bedfb0cc2a4013c804.bindTooltip(
                 `<div>
                      Žiri
                  </div>`,
@@ -610,17 +751,17 @@
             );
         
     
-                marker_849615e6feb2f98327b266194ef09ff6.setIcon(icon_5a6ee9413b1683b8f1416ca87ac67f04);
+                marker_a830e6190c9bc6bedfb0cc2a4013c804.setIcon(icon_4c9f20c78c00feea8edabd95fb01e115);
             
     
-            var marker_4d85ebe6175a32116f5030861eb2a930 = L.marker(
+            var marker_900d74024411ef184ed37024c1171a9d = L.marker(
                 [46.164, 14.288],
                 {
 }
-            ).addTo(feature_group_76348e5ba7b2ba885f4912af0dfd87aa);
+            ).addTo(feature_group_abcc9178f1d5df4083dc17371db9c202);
         
     
-            var icon_628a41b988d9c8fec2d002822e783433 = L.AwesomeMarkers.icon(
+            var icon_e3ace81ee8b0bb15f9d8ad536d4424a3 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "red",
   "iconColor": "white",
@@ -631,24 +772,24 @@
             );
         
     
-        var popup_ba6fcbfd9c8b9b60f7b0ddd9c0d00bd9 = L.popup({
+        var popup_31366b2ba99da53210634710c2769227 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_196432ecc53ab05718dad6f23467e516 = $(`<div id="html_196432ecc53ab05718dad6f23467e516" style="width: 100.0%; height: 100.0%;"><h3>Lubnik Hill</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     A forested area near the Selska Sora River                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
-                popup_ba6fcbfd9c8b9b60f7b0ddd9c0d00bd9.setContent(html_196432ecc53ab05718dad6f23467e516);
+                var html_0fd4755a641abc392a96ee05559429a2 = $(`<div id="html_0fd4755a641abc392a96ee05559429a2" style="width: 100.0%; height: 100.0%;"><h3>Lubnik Hill</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     A forested area near the Selska Sora River                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
+                popup_31366b2ba99da53210634710c2769227.setContent(html_0fd4755a641abc392a96ee05559429a2);
             
         
 
-        marker_4d85ebe6175a32116f5030861eb2a930.bindPopup(popup_ba6fcbfd9c8b9b60f7b0ddd9c0d00bd9)
+        marker_900d74024411ef184ed37024c1171a9d.bindPopup(popup_31366b2ba99da53210634710c2769227)
         ;
 
         
     
     
-            marker_4d85ebe6175a32116f5030861eb2a930.bindTooltip(
+            marker_900d74024411ef184ed37024c1171a9d.bindTooltip(
                 `<div>
                      Lubnik Hill
                  </div>`,
@@ -658,17 +799,17 @@
             );
         
     
-                marker_4d85ebe6175a32116f5030861eb2a930.setIcon(icon_628a41b988d9c8fec2d002822e783433);
+                marker_900d74024411ef184ed37024c1171a9d.setIcon(icon_e3ace81ee8b0bb15f9d8ad536d4424a3);
             
     
-            var marker_0aead0e668048ed85f94f7c25301cc4c = L.marker(
+            var marker_36e0ab8cfaa83d90eb16c6c28d17acc3 = L.marker(
                 [46.185, 14.301],
                 {
 }
-            ).addTo(feature_group_76348e5ba7b2ba885f4912af0dfd87aa);
+            ).addTo(feature_group_abcc9178f1d5df4083dc17371db9c202);
         
     
-            var icon_6ff29d324458a818a730eb6fe1f3ed4b = L.AwesomeMarkers.icon(
+            var icon_80b48f05b9186b6e78fce61573e24fb5 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "red",
   "iconColor": "white",
@@ -679,24 +820,24 @@
             );
         
     
-        var popup_d3d7a6a38a9d9690f14f4df795e228a2 = L.popup({
+        var popup_241ce655024b15d42db52721bc569c0b = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_77a08e88a465c867b4d4992c09b5aeed = $(`<div id="html_77a08e88a465c867b4d4992c09b5aeed" style="width: 100.0%; height: 100.0%;"><h3>Cross Church</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     An area with open fields and rolling hills north of the town offering a tranquil escape.                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
-                popup_d3d7a6a38a9d9690f14f4df795e228a2.setContent(html_77a08e88a465c867b4d4992c09b5aeed);
+                var html_9e2e8db3470b777febab0e66201c6462 = $(`<div id="html_9e2e8db3470b777febab0e66201c6462" style="width: 100.0%; height: 100.0%;"><h3>Cross Church</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     An area with open fields and rolling hills north of the town offering a tranquil escape.                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
+                popup_241ce655024b15d42db52721bc569c0b.setContent(html_9e2e8db3470b777febab0e66201c6462);
             
         
 
-        marker_0aead0e668048ed85f94f7c25301cc4c.bindPopup(popup_d3d7a6a38a9d9690f14f4df795e228a2)
+        marker_36e0ab8cfaa83d90eb16c6c28d17acc3.bindPopup(popup_241ce655024b15d42db52721bc569c0b)
         ;
 
         
     
     
-            marker_0aead0e668048ed85f94f7c25301cc4c.bindTooltip(
+            marker_36e0ab8cfaa83d90eb16c6c28d17acc3.bindTooltip(
                 `<div>
                      Cross Church
                  </div>`,
@@ -706,17 +847,17 @@
             );
         
     
-                marker_0aead0e668048ed85f94f7c25301cc4c.setIcon(icon_6ff29d324458a818a730eb6fe1f3ed4b);
+                marker_36e0ab8cfaa83d90eb16c6c28d17acc3.setIcon(icon_80b48f05b9186b6e78fce61573e24fb5);
             
     
-            var marker_2e5ee0ca76d798b683b16a0f3f0f97e0 = L.marker(
+            var marker_39ecdf87cd1409496004047a0ec52368 = L.marker(
                 [46.151, 14.309],
                 {
 }
-            ).addTo(feature_group_76348e5ba7b2ba885f4912af0dfd87aa);
+            ).addTo(feature_group_abcc9178f1d5df4083dc17371db9c202);
         
     
-            var icon_11de8f11a134eaf18b8daaef6876e2a6 = L.AwesomeMarkers.icon(
+            var icon_8072cb6f5d9ecf3efc202aadd5283be8 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "red",
   "iconColor": "white",
@@ -727,24 +868,24 @@
             );
         
     
-        var popup_9110acb270c616903613c4818ab33e92 = L.popup({
+        var popup_ab42495a7de1210e047c3b27b27040b6 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_5504588027bbb09f265e4504c72acf6c = $(`<div id="html_5504588027bbb09f265e4504c72acf6c" style="width: 100.0%; height: 100.0%;"><h3>Železniki</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     A location with a view of Škofja Loka Castle and the surrounding green landscape.                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
-                popup_9110acb270c616903613c4818ab33e92.setContent(html_5504588027bbb09f265e4504c72acf6c);
+                var html_8ee2dbd15ac1f65bfdea9e7f67897301 = $(`<div id="html_8ee2dbd15ac1f65bfdea9e7f67897301" style="width: 100.0%; height: 100.0%;"><h3>Železniki</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     A location with a view of Škofja Loka Castle and the surrounding green landscape.                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
+                popup_ab42495a7de1210e047c3b27b27040b6.setContent(html_8ee2dbd15ac1f65bfdea9e7f67897301);
             
         
 
-        marker_2e5ee0ca76d798b683b16a0f3f0f97e0.bindPopup(popup_9110acb270c616903613c4818ab33e92)
+        marker_39ecdf87cd1409496004047a0ec52368.bindPopup(popup_ab42495a7de1210e047c3b27b27040b6)
         ;
 
         
     
     
-            marker_2e5ee0ca76d798b683b16a0f3f0f97e0.bindTooltip(
+            marker_39ecdf87cd1409496004047a0ec52368.bindTooltip(
                 `<div>
                      Železniki
                  </div>`,
@@ -754,17 +895,17 @@
             );
         
     
-                marker_2e5ee0ca76d798b683b16a0f3f0f97e0.setIcon(icon_11de8f11a134eaf18b8daaef6876e2a6);
+                marker_39ecdf87cd1409496004047a0ec52368.setIcon(icon_8072cb6f5d9ecf3efc202aadd5283be8);
             
     
-            var marker_0492b3f8df6c9c711b442984e939e889 = L.marker(
+            var marker_36498638a6486a8db06c825b478ec114 = L.marker(
                 [46.143, 14.295],
                 {
 }
-            ).addTo(feature_group_76348e5ba7b2ba885f4912af0dfd87aa);
+            ).addTo(feature_group_abcc9178f1d5df4083dc17371db9c202);
         
     
-            var icon_0009406cd77aeb692e8ecf85bc0934e4 = L.AwesomeMarkers.icon(
+            var icon_2e3aaba8006c7527f0d66b9ffab4f274 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "red",
   "iconColor": "white",
@@ -775,24 +916,24 @@
             );
         
     
-        var popup_9b4dba24af52ee9e5f13c92a159361ac = L.popup({
+        var popup_102fb5383aa734a0eaa3892204c57330 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_777d85170be0bcd7e3b51ac0b96b4bed = $(`<div id="html_777d85170be0bcd7e3b51ac0b96b4bed" style="width: 100.0%; height: 100.0%;"><h3>Hills</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     A quiet spot along the Poljanska Sora River                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
-                popup_9b4dba24af52ee9e5f13c92a159361ac.setContent(html_777d85170be0bcd7e3b51ac0b96b4bed);
+                var html_a73615cbff2bfbbb4a80cf2229868c37 = $(`<div id="html_a73615cbff2bfbbb4a80cf2229868c37" style="width: 100.0%; height: 100.0%;"><h3>Hills</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     A quiet spot along the Poljanska Sora River                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
+                popup_102fb5383aa734a0eaa3892204c57330.setContent(html_a73615cbff2bfbbb4a80cf2229868c37);
             
         
 
-        marker_0492b3f8df6c9c711b442984e939e889.bindPopup(popup_9b4dba24af52ee9e5f13c92a159361ac)
+        marker_36498638a6486a8db06c825b478ec114.bindPopup(popup_102fb5383aa734a0eaa3892204c57330)
         ;
 
         
     
     
-            marker_0492b3f8df6c9c711b442984e939e889.bindTooltip(
+            marker_36498638a6486a8db06c825b478ec114.bindTooltip(
                 `<div>
                      Hills
                  </div>`,
@@ -802,17 +943,17 @@
             );
         
     
-                marker_0492b3f8df6c9c711b442984e939e889.setIcon(icon_0009406cd77aeb692e8ecf85bc0934e4);
+                marker_36498638a6486a8db06c825b478ec114.setIcon(icon_2e3aaba8006c7527f0d66b9ffab4f274);
             
     
-            var marker_40936331fc398b37c664aa2fa2a0b884 = L.marker(
+            var marker_2fb68de475958651f8055f7a98b72115 = L.marker(
                 [46.166, 14.269],
                 {
 }
-            ).addTo(feature_group_76348e5ba7b2ba885f4912af0dfd87aa);
+            ).addTo(feature_group_abcc9178f1d5df4083dc17371db9c202);
         
     
-            var icon_aba49ef5026d4cffb46a0ccab30cd548 = L.AwesomeMarkers.icon(
+            var icon_908b9fb1e17372e360b732a1b1b1340a = L.AwesomeMarkers.icon(
                 {
   "markerColor": "red",
   "iconColor": "white",
@@ -823,24 +964,24 @@
             );
         
     
-        var popup_4e3b8aa2a746e205adf6e8fe655707b8 = L.popup({
+        var popup_99207905d0bb9c63beac2646c21ba7e2 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_528cd0a9487c8e81312030e1f3776fc8 = $(`<div id="html_528cd0a9487c8e81312030e1f3776fc8" style="width: 100.0%; height: 100.0%;"><h3>Suša</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     The hiking trail to Lubnik Hill                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
-                popup_4e3b8aa2a746e205adf6e8fe655707b8.setContent(html_528cd0a9487c8e81312030e1f3776fc8);
+                var html_ae8c4545334a915b7899c95989c016c4 = $(`<div id="html_ae8c4545334a915b7899c95989c016c4" style="width: 100.0%; height: 100.0%;"><h3>Suša</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     The hiking trail to Lubnik Hill                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
+                popup_99207905d0bb9c63beac2646c21ba7e2.setContent(html_ae8c4545334a915b7899c95989c016c4);
             
         
 
-        marker_40936331fc398b37c664aa2fa2a0b884.bindPopup(popup_4e3b8aa2a746e205adf6e8fe655707b8)
+        marker_2fb68de475958651f8055f7a98b72115.bindPopup(popup_99207905d0bb9c63beac2646c21ba7e2)
         ;
 
         
     
     
-            marker_40936331fc398b37c664aa2fa2a0b884.bindTooltip(
+            marker_2fb68de475958651f8055f7a98b72115.bindTooltip(
                 `<div>
                      Suša
                  </div>`,
@@ -850,17 +991,17 @@
             );
         
     
-                marker_40936331fc398b37c664aa2fa2a0b884.setIcon(icon_aba49ef5026d4cffb46a0ccab30cd548);
+                marker_2fb68de475958651f8055f7a98b72115.setIcon(icon_908b9fb1e17372e360b732a1b1b1340a);
             
     
-            var marker_8aaeba9666082afdb3f7d1d1eccd7763 = L.marker(
+            var marker_814591827ddbbff7008ae80cf8453dcd = L.marker(
                 [46.178, 14.322],
                 {
 }
-            ).addTo(feature_group_76348e5ba7b2ba885f4912af0dfd87aa);
+            ).addTo(feature_group_abcc9178f1d5df4083dc17371db9c202);
         
     
-            var icon_33ec8296775723675d181449e5971dab = L.AwesomeMarkers.icon(
+            var icon_292cd7743970654e9966921323a2b5d4 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "red",
   "iconColor": "white",
@@ -871,24 +1012,24 @@
             );
         
     
-        var popup_401306ee9ab9b874417ff559e2836c6e = L.popup({
+        var popup_e978d896948f7338f72aaa57ccdc3d48 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_d12609f69c86efc5450491cf3e11026d = $(`<div id="html_d12609f69c86efc5450491cf3e11026d" style="width: 100.0%; height: 100.0%;"><h3>Idrija Hills</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     A scenic view of the Škofja Loka region from a hiking trail on the outskirts of the town.                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
-                popup_401306ee9ab9b874417ff559e2836c6e.setContent(html_d12609f69c86efc5450491cf3e11026d);
+                var html_35ca94e1bc70281e5dbf7330aa37570d = $(`<div id="html_35ca94e1bc70281e5dbf7330aa37570d" style="width: 100.0%; height: 100.0%;"><h3>Idrija Hills</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     A scenic view of the Škofja Loka region from a hiking trail on the outskirts of the town.                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
+                popup_e978d896948f7338f72aaa57ccdc3d48.setContent(html_35ca94e1bc70281e5dbf7330aa37570d);
             
         
 
-        marker_8aaeba9666082afdb3f7d1d1eccd7763.bindPopup(popup_401306ee9ab9b874417ff559e2836c6e)
+        marker_814591827ddbbff7008ae80cf8453dcd.bindPopup(popup_e978d896948f7338f72aaa57ccdc3d48)
         ;
 
         
     
     
-            marker_8aaeba9666082afdb3f7d1d1eccd7763.bindTooltip(
+            marker_814591827ddbbff7008ae80cf8453dcd.bindTooltip(
                 `<div>
                      Idrija Hills
                  </div>`,
@@ -898,17 +1039,17 @@
             );
         
     
-                marker_8aaeba9666082afdb3f7d1d1eccd7763.setIcon(icon_33ec8296775723675d181449e5971dab);
+                marker_814591827ddbbff7008ae80cf8453dcd.setIcon(icon_292cd7743970654e9966921323a2b5d4);
             
     
-            var marker_295f15985132bdab452f00ab8d823c50 = L.marker(
+            var marker_8e59947da88b00f84cb4cb1cb60c7c31 = L.marker(
                 [46.155, 14.331],
                 {
 }
-            ).addTo(feature_group_76348e5ba7b2ba885f4912af0dfd87aa);
+            ).addTo(feature_group_abcc9178f1d5df4083dc17371db9c202);
         
     
-            var icon_665de0648c57a4eebf12645b8f7c3616 = L.AwesomeMarkers.icon(
+            var icon_d28b2f253ef1ecf5ab27262817a48a3d = L.AwesomeMarkers.icon(
                 {
   "markerColor": "red",
   "iconColor": "white",
@@ -919,24 +1060,24 @@
             );
         
     
-        var popup_25a07aa7d0b2ad324fced4b34924731c = L.popup({
+        var popup_cdbe3c7d3cf75b5b0f326fc766f42a5d = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_559886ee536259a95fcde4a29b0103b7 = $(`<div id="html_559886ee536259a95fcde4a29b0103b7" style="width: 100.0%; height: 100.0%;"><h3>Rupnik Line</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     An area of serene countryside and farmland                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
-                popup_25a07aa7d0b2ad324fced4b34924731c.setContent(html_559886ee536259a95fcde4a29b0103b7);
+                var html_49994eb9714d481546681f36db39886c = $(`<div id="html_49994eb9714d481546681f36db39886c" style="width: 100.0%; height: 100.0%;"><h3>Rupnik Line</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     An area of serene countryside and farmland                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
+                popup_cdbe3c7d3cf75b5b0f326fc766f42a5d.setContent(html_49994eb9714d481546681f36db39886c);
             
         
 
-        marker_295f15985132bdab452f00ab8d823c50.bindPopup(popup_25a07aa7d0b2ad324fced4b34924731c)
+        marker_8e59947da88b00f84cb4cb1cb60c7c31.bindPopup(popup_cdbe3c7d3cf75b5b0f326fc766f42a5d)
         ;
 
         
     
     
-            marker_295f15985132bdab452f00ab8d823c50.bindTooltip(
+            marker_8e59947da88b00f84cb4cb1cb60c7c31.bindTooltip(
                 `<div>
                      Rupnik Line
                  </div>`,
@@ -946,26 +1087,26 @@
             );
         
     
-                marker_295f15985132bdab452f00ab8d823c50.setIcon(icon_665de0648c57a4eebf12645b8f7c3616);
+                marker_8e59947da88b00f84cb4cb1cb60c7c31.setIcon(icon_d28b2f253ef1ecf5ab27262817a48a3d);
             
     
-            feature_group_76348e5ba7b2ba885f4912af0dfd87aa.addTo(map_9d199ec20fe9cacfe395c5b01eda3567);
+            feature_group_abcc9178f1d5df4083dc17371db9c202.addTo(map_fc7f8faa6cf26e86fde10d068ea211ad);
         
     
-            var feature_group_5decdafdff269b6565ff9cf3db90079b = L.featureGroup(
+            var feature_group_daf3cd02b9aca39ffc927d688ddc9f25 = L.featureGroup(
                 {
 }
             );
         
     
-            var marker_4a223559a92b0aaaf77de1f16f021d45 = L.marker(
+            var marker_448cff7fe2d8323016305179dcbf7a60 = L.marker(
                 [46164.0, 14.312],
                 {
 }
-            ).addTo(feature_group_5decdafdff269b6565ff9cf3db90079b);
+            ).addTo(feature_group_daf3cd02b9aca39ffc927d688ddc9f25);
         
     
-            var icon_5241db781fc0a2d9076c3a5c15fe60ca = L.AwesomeMarkers.icon(
+            var icon_221abf2e17015daee41436b3dd458306 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -976,24 +1117,24 @@
             );
         
     
-        var popup_75efa55bcd68fba2aa2d4ebcdbd03c14 = L.popup({
+        var popup_cf5b633cba8598880313503be63acc20 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_1d09522a74370a79f7fcd56df9b21836 = $(`<div id="html_1d09522a74370a79f7fcd56df9b21836" style="width: 100.0%; height: 100.0%;"><h3>Poljanska Sora</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     A picturesque viewpoint of the Poljanska Sora River near the old town.                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
-                popup_75efa55bcd68fba2aa2d4ebcdbd03c14.setContent(html_1d09522a74370a79f7fcd56df9b21836);
+                var html_8a5cced89259fa0a7767a82191111ae1 = $(`<div id="html_8a5cced89259fa0a7767a82191111ae1" style="width: 100.0%; height: 100.0%;"><h3>Poljanska Sora</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     A picturesque viewpoint of the Poljanska Sora River near the old town.                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
+                popup_cf5b633cba8598880313503be63acc20.setContent(html_8a5cced89259fa0a7767a82191111ae1);
             
         
 
-        marker_4a223559a92b0aaaf77de1f16f021d45.bindPopup(popup_75efa55bcd68fba2aa2d4ebcdbd03c14)
+        marker_448cff7fe2d8323016305179dcbf7a60.bindPopup(popup_cf5b633cba8598880313503be63acc20)
         ;
 
         
     
     
-            marker_4a223559a92b0aaaf77de1f16f021d45.bindTooltip(
+            marker_448cff7fe2d8323016305179dcbf7a60.bindTooltip(
                 `<div>
                      Poljanska Sora
                  </div>`,
@@ -1003,17 +1144,17 @@
             );
         
     
-                marker_4a223559a92b0aaaf77de1f16f021d45.setIcon(icon_5241db781fc0a2d9076c3a5c15fe60ca);
+                marker_448cff7fe2d8323016305179dcbf7a60.setIcon(icon_221abf2e17015daee41436b3dd458306);
             
     
-            var marker_d6717dac8413dce3d9b201ea23b1e168 = L.marker(
+            var marker_ec4e1df91385e21a532c2ff1753f6d28 = L.marker(
                 [46.225, 14.45],
                 {
 }
-            ).addTo(feature_group_5decdafdff269b6565ff9cf3db90079b);
+            ).addTo(feature_group_daf3cd02b9aca39ffc927d688ddc9f25);
         
     
-            var icon_7aa4f9ff14552f8aa111c04d45bdc6fd = L.AwesomeMarkers.icon(
+            var icon_fd76ab41334792b114990ec104a5c2f7 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -1024,24 +1165,24 @@
             );
         
     
-        var popup_4442d355c5402d257fe8f477602525d5 = L.popup({
+        var popup_f856836201907116b116effc64e929f2 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_669b16274e5c12a88010bf527c3a05fe = $(`<div id="html_669b16274e5c12a88010bf527c3a05fe" style="width: 100.0%; height: 100.0%;"><h3>Visoko</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     Near the charming village of Visoko, close to the historic Tavčar Manor.                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
-                popup_4442d355c5402d257fe8f477602525d5.setContent(html_669b16274e5c12a88010bf527c3a05fe);
+                var html_99c997e140846fe092118e2958c6b877 = $(`<div id="html_99c997e140846fe092118e2958c6b877" style="width: 100.0%; height: 100.0%;"><h3>Visoko</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     Near the charming village of Visoko, close to the historic Tavčar Manor.                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
+                popup_f856836201907116b116effc64e929f2.setContent(html_99c997e140846fe092118e2958c6b877);
             
         
 
-        marker_d6717dac8413dce3d9b201ea23b1e168.bindPopup(popup_4442d355c5402d257fe8f477602525d5)
+        marker_ec4e1df91385e21a532c2ff1753f6d28.bindPopup(popup_f856836201907116b116effc64e929f2)
         ;
 
         
     
     
-            marker_d6717dac8413dce3d9b201ea23b1e168.bindTooltip(
+            marker_ec4e1df91385e21a532c2ff1753f6d28.bindTooltip(
                 `<div>
                      Visoko
                  </div>`,
@@ -1051,17 +1192,17 @@
             );
         
     
-                marker_d6717dac8413dce3d9b201ea23b1e168.setIcon(icon_7aa4f9ff14552f8aa111c04d45bdc6fd);
+                marker_ec4e1df91385e21a532c2ff1753f6d28.setIcon(icon_fd76ab41334792b114990ec104a5c2f7);
             
     
-            var marker_0b5528c481b54b0ed1e0d0fbed6c29a0 = L.marker(
+            var marker_42d2a2f50b9d1325938cb8ef3c2d758d = L.marker(
                 [46.121, 14.18],
                 {
 }
-            ).addTo(feature_group_5decdafdff269b6565ff9cf3db90079b);
+            ).addTo(feature_group_daf3cd02b9aca39ffc927d688ddc9f25);
         
     
-            var icon_47e3efa83f871f70ae61678f55c64009 = L.AwesomeMarkers.icon(
+            var icon_b736cbe39fc590c7d7cfafd119cd1f5d = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -1072,24 +1213,24 @@
             );
         
     
-        var popup_65b300d2b0a90942a0b54fc3a86328ed = L.popup({
+        var popup_855c39aaa8d5d52ccaf193c42aff2530 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_07ada13094682119478eafbbb36a9bed = $(`<div id="html_07ada13094682119478eafbbb36a9bed" style="width: 100.0%; height: 100.0%;"><h3>Žiri</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     A rural location on the outskirts of the town of Žiri, known for its shoemaking history.                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
-                popup_65b300d2b0a90942a0b54fc3a86328ed.setContent(html_07ada13094682119478eafbbb36a9bed);
+                var html_659c4810637f4c7bddaee35fb9e48d58 = $(`<div id="html_659c4810637f4c7bddaee35fb9e48d58" style="width: 100.0%; height: 100.0%;"><h3>Žiri</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     A rural location on the outskirts of the town of Žiri, known for its shoemaking history.                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
+                popup_855c39aaa8d5d52ccaf193c42aff2530.setContent(html_659c4810637f4c7bddaee35fb9e48d58);
             
         
 
-        marker_0b5528c481b54b0ed1e0d0fbed6c29a0.bindPopup(popup_65b300d2b0a90942a0b54fc3a86328ed)
+        marker_42d2a2f50b9d1325938cb8ef3c2d758d.bindPopup(popup_855c39aaa8d5d52ccaf193c42aff2530)
         ;
 
         
     
     
-            marker_0b5528c481b54b0ed1e0d0fbed6c29a0.bindTooltip(
+            marker_42d2a2f50b9d1325938cb8ef3c2d758d.bindTooltip(
                 `<div>
                      Žiri
                  </div>`,
@@ -1099,17 +1240,17 @@
             );
         
     
-                marker_0b5528c481b54b0ed1e0d0fbed6c29a0.setIcon(icon_47e3efa83f871f70ae61678f55c64009);
+                marker_42d2a2f50b9d1325938cb8ef3c2d758d.setIcon(icon_b736cbe39fc590c7d7cfafd119cd1f5d);
             
     
-            var marker_1775a3e79f2b8fcdd94faae2ffdcf9e7 = L.marker(
+            var marker_a35b9ce53ab9761819f3ce73c322ddb0 = L.marker(
                 [46.198, 14.244],
                 {
 }
-            ).addTo(feature_group_5decdafdff269b6565ff9cf3db90079b);
+            ).addTo(feature_group_daf3cd02b9aca39ffc927d688ddc9f25);
         
     
-            var icon_6d8feb60cf87581dc10839d7ead1a5de = L.AwesomeMarkers.icon(
+            var icon_8bf297643e7db0399f1200fdd2f6c1f2 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -1120,24 +1261,24 @@
             );
         
     
-        var popup_59dbcf9b5793c2126a9007422c8c548b = L.popup({
+        var popup_fc7d77c0779539b2f4f8e8e39906a740 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_1dd9510b76ac282deeaa325d3ae28298 = $(`<div id="html_1dd9510b76ac282deeaa325d3ae28298" style="width: 100.0%; height: 100.0%;"><h3>Lubnik Hill</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     Spremenila bova, ker sva kul                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
-                popup_59dbcf9b5793c2126a9007422c8c548b.setContent(html_1dd9510b76ac282deeaa325d3ae28298);
+                var html_c059c04905954d28942913dc37fa7e9d = $(`<div id="html_c059c04905954d28942913dc37fa7e9d" style="width: 100.0%; height: 100.0%;"><h3>Lubnik Hill</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     Spremenila bova, ker sva kul                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
+                popup_fc7d77c0779539b2f4f8e8e39906a740.setContent(html_c059c04905954d28942913dc37fa7e9d);
             
         
 
-        marker_1775a3e79f2b8fcdd94faae2ffdcf9e7.bindPopup(popup_59dbcf9b5793c2126a9007422c8c548b)
+        marker_a35b9ce53ab9761819f3ce73c322ddb0.bindPopup(popup_fc7d77c0779539b2f4f8e8e39906a740)
         ;
 
         
     
     
-            marker_1775a3e79f2b8fcdd94faae2ffdcf9e7.bindTooltip(
+            marker_a35b9ce53ab9761819f3ce73c322ddb0.bindTooltip(
                 `<div>
                      Lubnik Hill
                  </div>`,
@@ -1147,17 +1288,17 @@
             );
         
     
-                marker_1775a3e79f2b8fcdd94faae2ffdcf9e7.setIcon(icon_6d8feb60cf87581dc10839d7ead1a5de);
+                marker_a35b9ce53ab9761819f3ce73c322ddb0.setIcon(icon_8bf297643e7db0399f1200fdd2f6c1f2);
             
     
-            var marker_b31241b4f4d6c4e4192227566ba39b62 = L.marker(
+            var marker_5eb3fe9245f655885ca9c8f00f88d504 = L.marker(
                 [46.175, 14.301],
                 {
 }
-            ).addTo(feature_group_5decdafdff269b6565ff9cf3db90079b);
+            ).addTo(feature_group_daf3cd02b9aca39ffc927d688ddc9f25);
         
     
-            var icon_b3973d8fcecde35dbfa611475c06b4e5 = L.AwesomeMarkers.icon(
+            var icon_2e671ae46e272cb38340355cd8f276ca = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -1168,24 +1309,24 @@
             );
         
     
-        var popup_b6f914149e827e85a30151c13cd1a01c = L.popup({
+        var popup_844e191286313fcd0945f66abeb67400 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_4346a6c599bf7da9f3ded1876f0aec08 = $(`<div id="html_4346a6c599bf7da9f3ded1876f0aec08" style="width: 100.0%; height: 100.0%;"><h3>Cross Church</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     blakdshadfkjhsfjkhsdfkj hfkjhskjfhsdkj hfjkdshfjksdhfjksdhfjkfshdjksdhfjksdhfjksdhfjkshdfjkshdfjksdhfjksdfhjksfdhkjfdshjkfdshjksdfhjkfdshjfkdsh                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
-                popup_b6f914149e827e85a30151c13cd1a01c.setContent(html_4346a6c599bf7da9f3ded1876f0aec08);
+                var html_ae34a063ab159404aee1731e0d48f71f = $(`<div id="html_ae34a063ab159404aee1731e0d48f71f" style="width: 100.0%; height: 100.0%;"><h3>Cross Church</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     blakdshadfkjhsfjkhsdfkj hfkjhskjfhsdkj hfjkdshfjksdhfjksdhfjkfshdjksdhfjksdhfjksdhfjkshdfjkshdfjksdhfjksdfhjksfdhkjfdshjkfdshjksdfhjkfdshjfkdsh                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
+                popup_844e191286313fcd0945f66abeb67400.setContent(html_ae34a063ab159404aee1731e0d48f71f);
             
         
 
-        marker_b31241b4f4d6c4e4192227566ba39b62.bindPopup(popup_b6f914149e827e85a30151c13cd1a01c)
+        marker_5eb3fe9245f655885ca9c8f00f88d504.bindPopup(popup_844e191286313fcd0945f66abeb67400)
         ;
 
         
     
     
-            marker_b31241b4f4d6c4e4192227566ba39b62.bindTooltip(
+            marker_5eb3fe9245f655885ca9c8f00f88d504.bindTooltip(
                 `<div>
                      Cross Church
                  </div>`,
@@ -1195,17 +1336,17 @@
             );
         
     
-                marker_b31241b4f4d6c4e4192227566ba39b62.setIcon(icon_b3973d8fcecde35dbfa611475c06b4e5);
+                marker_5eb3fe9245f655885ca9c8f00f88d504.setIcon(icon_2e671ae46e272cb38340355cd8f276ca);
             
     
-            var marker_7e43ae2d614df1f401bb3ca2d00d493e = L.marker(
+            var marker_f2bfaef0eca1a90e421236e4f71f75ad = L.marker(
                 [46.208, 14.415],
                 {
 }
-            ).addTo(feature_group_5decdafdff269b6565ff9cf3db90079b);
+            ).addTo(feature_group_daf3cd02b9aca39ffc927d688ddc9f25);
         
     
-            var icon_667786ebb32cda411f3c624d106ab6b0 = L.AwesomeMarkers.icon(
+            var icon_caa82ab86e8282ad9a3f9d9e5fb41ca0 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -1216,24 +1357,24 @@
             );
         
     
-        var popup_70c4f4150c1262603c626ecc36f64492 = L.popup({
+        var popup_09d03b260b18ff41f60c7f0151a1877d = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_1f67c773b56c68d61abb88dcfc7a84c0 = $(`<div id="html_1f67c773b56c68d61abb88dcfc7a84c0" style="width: 100.0%; height: 100.0%;"><h3>Železniki</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     Near the town of Železniki, a village famous for its ironworking heritage.                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
-                popup_70c4f4150c1262603c626ecc36f64492.setContent(html_1f67c773b56c68d61abb88dcfc7a84c0);
+                var html_a1b2f6b4f2f5a83c5112e90e564bc585 = $(`<div id="html_a1b2f6b4f2f5a83c5112e90e564bc585" style="width: 100.0%; height: 100.0%;"><h3>Železniki</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     Near the town of Železniki, a village famous for its ironworking heritage.                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
+                popup_09d03b260b18ff41f60c7f0151a1877d.setContent(html_a1b2f6b4f2f5a83c5112e90e564bc585);
             
         
 
-        marker_7e43ae2d614df1f401bb3ca2d00d493e.bindPopup(popup_70c4f4150c1262603c626ecc36f64492)
+        marker_f2bfaef0eca1a90e421236e4f71f75ad.bindPopup(popup_09d03b260b18ff41f60c7f0151a1877d)
         ;
 
         
     
     
-            marker_7e43ae2d614df1f401bb3ca2d00d493e.bindTooltip(
+            marker_f2bfaef0eca1a90e421236e4f71f75ad.bindTooltip(
                 `<div>
                      Železniki
                  </div>`,
@@ -1243,17 +1384,17 @@
             );
         
     
-                marker_7e43ae2d614df1f401bb3ca2d00d493e.setIcon(icon_667786ebb32cda411f3c624d106ab6b0);
+                marker_f2bfaef0eca1a90e421236e4f71f75ad.setIcon(icon_caa82ab86e8282ad9a3f9d9e5fb41ca0);
             
     
-            var marker_21291b61e24aa1af81ffb0e882c0b2a4 = L.marker(
+            var marker_374d1fb7605ec0c83c97f5f509e0f3b2 = L.marker(
                 [46.021, 14.288],
                 {
 }
-            ).addTo(feature_group_5decdafdff269b6565ff9cf3db90079b);
+            ).addTo(feature_group_daf3cd02b9aca39ffc927d688ddc9f25);
         
     
-            var icon_7ed587926b195528adb0b7483a581efe = L.AwesomeMarkers.icon(
+            var icon_031fef4d268702c3f47fc3d0bc2481bc = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -1264,24 +1405,24 @@
             );
         
     
-        var popup_8fa43c471c2d2f8a84cdc9fb84762d47 = L.popup({
+        var popup_6ba437ebba4a74bae8ca0209bed127fb = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_398ab3d0086f1e52e270c70748588043 = $(`<div id="html_398ab3d0086f1e52e270c70748588043" style="width: 100.0%; height: 100.0%;"><h3>Hills</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     A quiet spot near the border of the Škofja Loka region, surrounded by rolling hills.                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
-                popup_8fa43c471c2d2f8a84cdc9fb84762d47.setContent(html_398ab3d0086f1e52e270c70748588043);
+                var html_d8360dffe66b7b2c9c8d82b605809494 = $(`<div id="html_d8360dffe66b7b2c9c8d82b605809494" style="width: 100.0%; height: 100.0%;"><h3>Hills</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     A quiet spot near the border of the Škofja Loka region, surrounded by rolling hills.                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
+                popup_6ba437ebba4a74bae8ca0209bed127fb.setContent(html_d8360dffe66b7b2c9c8d82b605809494);
             
         
 
-        marker_21291b61e24aa1af81ffb0e882c0b2a4.bindPopup(popup_8fa43c471c2d2f8a84cdc9fb84762d47)
+        marker_374d1fb7605ec0c83c97f5f509e0f3b2.bindPopup(popup_6ba437ebba4a74bae8ca0209bed127fb)
         ;
 
         
     
     
-            marker_21291b61e24aa1af81ffb0e882c0b2a4.bindTooltip(
+            marker_374d1fb7605ec0c83c97f5f509e0f3b2.bindTooltip(
                 `<div>
                      Hills
                  </div>`,
@@ -1291,17 +1432,17 @@
             );
         
     
-                marker_21291b61e24aa1af81ffb0e882c0b2a4.setIcon(icon_7ed587926b195528adb0b7483a581efe);
+                marker_374d1fb7605ec0c83c97f5f509e0f3b2.setIcon(icon_031fef4d268702c3f47fc3d0bc2481bc);
             
     
-            var marker_f7aac2ebefc9d2e60f06e02a201c9f70 = L.marker(
+            var marker_58374ae6c34368571abdc530bdc51534 = L.marker(
                 [46.155, 14.366],
                 {
 }
-            ).addTo(feature_group_5decdafdff269b6565ff9cf3db90079b);
+            ).addTo(feature_group_daf3cd02b9aca39ffc927d688ddc9f25);
         
     
-            var icon_a0e66ad7b216edbd3257a0295539a323 = L.AwesomeMarkers.icon(
+            var icon_d05c9bf2881275dff770192c58a02833 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -1312,24 +1453,24 @@
             );
         
     
-        var popup_8a47c83a79bd267049e65ee0f9b399f6 = L.popup({
+        var popup_ea9c7fcb05dc39a03bfb44698be81e78 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_fbd2517a904fc1ff90355942e96a1634 = $(`<div id="html_fbd2517a904fc1ff90355942e96a1634" style="width: 100.0%; height: 100.0%;"><h3>Suša</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     A countryside location near the village of Suša, home to a small church.                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
-                popup_8a47c83a79bd267049e65ee0f9b399f6.setContent(html_fbd2517a904fc1ff90355942e96a1634);
+                var html_398bda3f753be39066c1aa2f10500445 = $(`<div id="html_398bda3f753be39066c1aa2f10500445" style="width: 100.0%; height: 100.0%;"><h3>Suša</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     A countryside location near the village of Suša, home to a small church.                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
+                popup_ea9c7fcb05dc39a03bfb44698be81e78.setContent(html_398bda3f753be39066c1aa2f10500445);
             
         
 
-        marker_f7aac2ebefc9d2e60f06e02a201c9f70.bindPopup(popup_8a47c83a79bd267049e65ee0f9b399f6)
+        marker_58374ae6c34368571abdc530bdc51534.bindPopup(popup_ea9c7fcb05dc39a03bfb44698be81e78)
         ;
 
         
     
     
-            marker_f7aac2ebefc9d2e60f06e02a201c9f70.bindTooltip(
+            marker_58374ae6c34368571abdc530bdc51534.bindTooltip(
                 `<div>
                      Suša
                  </div>`,
@@ -1339,17 +1480,17 @@
             );
         
     
-                marker_f7aac2ebefc9d2e60f06e02a201c9f70.setIcon(icon_a0e66ad7b216edbd3257a0295539a323);
+                marker_58374ae6c34368571abdc530bdc51534.setIcon(icon_d05c9bf2881275dff770192c58a02833);
             
     
-            var marker_ec2bd4b28bd59bbde3f26e73db5294fa = L.marker(
+            var marker_e1db7e3c6c7834ca7af2a5613c301fda = L.marker(
                 [46.09, 14.23],
                 {
 }
-            ).addTo(feature_group_5decdafdff269b6565ff9cf3db90079b);
+            ).addTo(feature_group_daf3cd02b9aca39ffc927d688ddc9f25);
         
     
-            var icon_9ed6ecfd7f82d86be2bcdce83134acf0 = L.AwesomeMarkers.icon(
+            var icon_73cf8fdb6aa66c0e250402e8cda648b7 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -1360,24 +1501,24 @@
             );
         
     
-        var popup_d18640fd5bbcca1784dea7cd2888b10a = L.popup({
+        var popup_5339d7305087b75a31b8e311831465bf = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_6af50f92f043aa9ed2afa6a375dd28b5 = $(`<div id="html_6af50f92f043aa9ed2afa6a375dd28b5" style="width: 100.0%; height: 100.0%;"><h3>Idrija Hills</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     In the Idrija Hills, a peaceful area for exploring the natural landscape.                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
-                popup_d18640fd5bbcca1784dea7cd2888b10a.setContent(html_6af50f92f043aa9ed2afa6a375dd28b5);
+                var html_c98c9f2f03c475fedd2f3474d5f165f1 = $(`<div id="html_c98c9f2f03c475fedd2f3474d5f165f1" style="width: 100.0%; height: 100.0%;"><h3>Idrija Hills</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     In the Idrija Hills, a peaceful area for exploring the natural landscape.                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
+                popup_5339d7305087b75a31b8e311831465bf.setContent(html_c98c9f2f03c475fedd2f3474d5f165f1);
             
         
 
-        marker_ec2bd4b28bd59bbde3f26e73db5294fa.bindPopup(popup_d18640fd5bbcca1784dea7cd2888b10a)
+        marker_e1db7e3c6c7834ca7af2a5613c301fda.bindPopup(popup_5339d7305087b75a31b8e311831465bf)
         ;
 
         
     
     
-            marker_ec2bd4b28bd59bbde3f26e73db5294fa.bindTooltip(
+            marker_e1db7e3c6c7834ca7af2a5613c301fda.bindTooltip(
                 `<div>
                      Idrija Hills
                  </div>`,
@@ -1387,17 +1528,17 @@
             );
         
     
-                marker_ec2bd4b28bd59bbde3f26e73db5294fa.setIcon(icon_9ed6ecfd7f82d86be2bcdce83134acf0);
+                marker_e1db7e3c6c7834ca7af2a5613c301fda.setIcon(icon_73cf8fdb6aa66c0e250402e8cda648b7);
             
     
-            var marker_5b15b7a5f53570a3813bca66063dd0eb = L.marker(
+            var marker_dca4bce01650fc2b826e08d175ac869f = L.marker(
                 [46.21, 14.195],
                 {
 }
-            ).addTo(feature_group_5decdafdff269b6565ff9cf3db90079b);
+            ).addTo(feature_group_daf3cd02b9aca39ffc927d688ddc9f25);
         
     
-            var icon_8fba116e60551efa4e5b6f95ea10c571 = L.AwesomeMarkers.icon(
+            var icon_7670463ab0f51467e236b8a2a9d88572 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -1408,24 +1549,24 @@
             );
         
     
-        var popup_bffcf319f467c9200741d66c6656d922 = L.popup({
+        var popup_92a1736740d0ff8a5f2d341f9a1737fb = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_476ebc8fa7dee52c29c5cb7bb0ecd79e = $(`<div id="html_476ebc8fa7dee52c29c5cb7bb0ecd79e" style="width: 100.0%; height: 100.0%;"><h3>Rupnik Line</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     A point on the Rupnik Line fortifications, offering a glimpse into Slovenia&#x27;s history.                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
-                popup_bffcf319f467c9200741d66c6656d922.setContent(html_476ebc8fa7dee52c29c5cb7bb0ecd79e);
+                var html_a504cc78e0ed424e957c6e43c6e6654e = $(`<div id="html_a504cc78e0ed424e957c6e43c6e6654e" style="width: 100.0%; height: 100.0%;"><h3>Rupnik Line</h3>                 <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-all;">                     A point on the Rupnik Line fortifications, offering a glimpse into Slovenia&#x27;s history.                 </div>             <hr style='margin: 5px 0;'></div>`)[0];
+                popup_92a1736740d0ff8a5f2d341f9a1737fb.setContent(html_a504cc78e0ed424e957c6e43c6e6654e);
             
         
 
-        marker_5b15b7a5f53570a3813bca66063dd0eb.bindPopup(popup_bffcf319f467c9200741d66c6656d922)
+        marker_dca4bce01650fc2b826e08d175ac869f.bindPopup(popup_92a1736740d0ff8a5f2d341f9a1737fb)
         ;
 
         
     
     
-            marker_5b15b7a5f53570a3813bca66063dd0eb.bindTooltip(
+            marker_dca4bce01650fc2b826e08d175ac869f.bindTooltip(
                 `<div>
                      Rupnik Line
                  </div>`,
@@ -1435,33 +1576,33 @@
             );
         
     
-                marker_5b15b7a5f53570a3813bca66063dd0eb.setIcon(icon_8fba116e60551efa4e5b6f95ea10c571);
+                marker_dca4bce01650fc2b826e08d175ac869f.setIcon(icon_7670463ab0f51467e236b8a2a9d88572);
             
     
-            feature_group_5decdafdff269b6565ff9cf3db90079b.addTo(map_9d199ec20fe9cacfe395c5b01eda3567);
+            feature_group_daf3cd02b9aca39ffc927d688ddc9f25.addTo(map_fc7f8faa6cf26e86fde10d068ea211ad);
         
     
-            var layer_control_fe0c7f058f7c3ab71dc637038a843725_layers = {
+            var layer_control_02e377622644d97ef6922ce325c64014_layers = {
                 base_layers : {
-                    "https://mt1.google.com/vt/lyrs=y\u0026x={x}\u0026y={y}\u0026z={z}" : tile_layer_e5f9ab1f0e6ce5a1c3f3747bcd917189,
-                    "Google Satellite" : tile_layer_1f0e2e24309cebac501bcaf95de8ea4d,
-                    "Google Hybrid" : tile_layer_9b4c9721f4ccd06e625877efd0468618,
+                    "https://mt1.google.com/vt/lyrs=y\u0026x={x}\u0026y={y}\u0026z={z}" : tile_layer_fad1954fa0d5c42dd2cc6c7c8245442c,
+                    "Google Satellite" : tile_layer_251817e9f7b4ede9f84cc2f0104cc021,
+                    "Google Hybrid" : tile_layer_cdb4a1d4d3a8bef57ba1febb7350ac04,
                 },
                 overlays :  {
-                    "\u0160kofjaLoka" : feature_group_8c4f5ddf2003c2407cbd555af50494f8,
-                    "\u017delezniki" : feature_group_76348e5ba7b2ba885f4912af0dfd87aa,
-                    "Trata" : feature_group_5decdafdff269b6565ff9cf3db90079b,
+                    "\u0160kofjaLoka" : feature_group_3bc61307ad0cbae02f7cd4e52e6ead02,
+                    "\u017delezniki" : feature_group_abcc9178f1d5df4083dc17371db9c202,
+                    "Trata" : feature_group_daf3cd02b9aca39ffc927d688ddc9f25,
                 },
             };
-            let layer_control_fe0c7f058f7c3ab71dc637038a843725 = L.control.layers(
-                layer_control_fe0c7f058f7c3ab71dc637038a843725_layers.base_layers,
-                layer_control_fe0c7f058f7c3ab71dc637038a843725_layers.overlays,
+            let layer_control_02e377622644d97ef6922ce325c64014 = L.control.layers(
+                layer_control_02e377622644d97ef6922ce325c64014_layers.base_layers,
+                layer_control_02e377622644d97ef6922ce325c64014_layers.overlays,
                 {
   "position": "topright",
   "collapsed": true,
   "autoZIndex": true,
 }
-            ).addTo(map_9d199ec20fe9cacfe395c5b01eda3567);
+            ).addTo(map_fc7f8faa6cf26e86fde10d068ea211ad);
 
         
 </script>
